@@ -1,8 +1,7 @@
-import React from "react";
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
 import "../styles/Footer.css";
 
-const Footer: React.FC = () => {
+export default function Footer() {
   return (
     <footer className="site-footer" dir="rtl">
       <div className="footer-top">
@@ -48,5 +47,3 @@ const Footer: React.FC = () => {
     </footer>
   );
 };
-
-export default Footer;

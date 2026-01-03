@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../styles/CourseRegisterForm.css";
 
-const CourseRegisterForm: React.FC = () => {
+export default function CourseRegisterForm() {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -116,5 +116,3 @@ const CourseRegisterForm: React.FC = () => {
     </div>
   );
 };
-
-export default CourseRegisterForm;
