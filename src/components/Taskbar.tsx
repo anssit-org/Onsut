@@ -19,14 +19,14 @@ return (
 
 
   <nav className="nav">
-      <a href="#">الرئيسية</a>
-      <a href="#">من نحن</a>
-      <a href="#">خدماتنا</a>
-      <a href="#">نادي انصت</a>
-      <a href="#">مراكزنا وفروعنا</a>
-      <a href="#">معرض النشاطات</a>
-      <a href="#">قم بدعمنا</a>
-      <a href="#">تواصل معنا</a>
+      <a href="/">الرئيسية</a>
+      <a href="/about">من نحن</a>
+      <a href="/services">خدماتنا</a>
+      <a href="/clubs">نادي انصت</a>
+      <a href="/branches">مراكزنا وفروعنا</a>
+      <a href="/gallery">معرض النشاطات</a>
+      <a href="/support">قم بدعمنا</a>
+      <a href="/contact">تواصل معنا</a>
   </nav>
 
 
