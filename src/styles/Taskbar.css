@@ -3,6 +3,10 @@
    MAIN BAR (DESKTOP)
 ========================= */
 .taskbar {
+    position: sticky; /* 👈 stays at top when scrolling */
+    top: 0;
+    z-index: 1000; /* 👈 stays above page content */
+
     height: 80px;
     background: #f7f7f7;
     display: flex;

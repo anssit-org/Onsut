@@ -1,9 +1,21 @@
-/* Page layout */
+/* =========================
+   GLOBAL SAFETY
+========================= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* =========================
+   PAGE LAYOUT
+========================= */
 .au-page {
   width: 100%;
   min-height: 100vh;
   padding: 4rem 1rem;
   background-color: #f9fafb;
+  overflow-x: hidden; /* FIX horizontal scroll */
 }
 
 .au-container {
@@ -15,43 +27,53 @@
 
 .au-content {
   width: 65%;
+  max-width: 100%;
   direction: rtl;
   text-align: right;
 }
 
-/* Headings */
+/* =========================
+   HEADINGS
+========================= */
 .au-title {
   font-size: 2.6rem;
   margin-bottom: 1.8rem;
+  color: #2483c5;
 }
 
 .au-subtitle {
   font-size: 1.9rem;
   margin-top: 3.5rem;
   margin-bottom: 1.5rem;
+  color: #2483c5;
 }
 
-/* Paragraphs */
+/* =========================
+   PARAGRAPHS
+========================= */
 .au-content p {
   font-size: 1.1rem;
   line-height: 1.9;
-  color: #444;
+  color: #262161;
   margin-bottom: 1.2rem;
 }
 
-/* Founder section */
+/* =========================
+   FOUNDER SECTION
+========================= */
 .au-founder {
   display: flex;
   gap: 2.5rem;
   margin-top: 2rem;
   align-items: flex-start;
-
-  direction: ltr; /* 👈 force image on the LEFT */
+  direction: ltr; /* image on the LEFT */
+  max-width: 100%;
 }
 
 .au-founder-photo {
   min-width: 180px;
   text-align: center;
+  flex-shrink: 0;
 }
 
 .au-founder-photo img {
@@ -67,18 +89,21 @@
   display: block;
   font-weight: bold;
   font-size: 1.1rem;
+  color: #2483c5;
 }
 
 .au-founder-role {
   display: block;
   font-size: 0.9rem;
-  color: #666;
+  color: #262161;
 }
 
 /* Founder text */
 .au-founder-text {
   direction: rtl;
   text-align: right;
+  color: #262161;
+  max-width: 100%;
 }
 
 .au-founder-text p:first-child {
@@ -86,14 +111,16 @@
   font-size: 1.15rem;
 }
 
-/* Responsive */
+/* =========================
+   RESPONSIVE
+========================= */
 @media (max-width: 900px) {
-  .au-content {
-    width: 100%;
-  }
-
   .au-container {
     justify-content: center;
+  }
+
+  .au-content {
+    width: 100%;
   }
 
   .au-founder {
