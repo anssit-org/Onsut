@@ -1,0 +1,108 @@
+/* Page layout */
+.au-page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 4rem 1rem;
+  background-color: #f9fafb;
+}
+
+.au-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.au-content {
+  width: 65%;
+  direction: rtl;
+  text-align: right;
+}
+
+/* Headings */
+.au-title {
+  font-size: 2.6rem;
+  margin-bottom: 1.8rem;
+}
+
+.au-subtitle {
+  font-size: 1.9rem;
+  margin-top: 3.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Paragraphs */
+.au-content p {
+  font-size: 1.1rem;
+  line-height: 1.9;
+  color: #444;
+  margin-bottom: 1.2rem;
+}
+
+/* Founder section */
+.au-founder {
+  display: flex;
+  gap: 2.5rem;
+  margin-top: 2rem;
+  align-items: flex-start;
+
+  direction: ltr; /* 👈 force image on the LEFT */
+}
+
+.au-founder-photo {
+  min-width: 180px;
+  text-align: center;
+}
+
+.au-founder-photo img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0.9rem;
+  border: 3px solid #e5e7eb;
+}
+
+.au-founder-name {
+  display: block;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.au-founder-role {
+  display: block;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Founder text */
+.au-founder-text {
+  direction: rtl;
+  text-align: right;
+}
+
+.au-founder-text p:first-child {
+  font-style: italic;
+  font-size: 1.15rem;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .au-content {
+    width: 100%;
+  }
+
+  .au-container {
+    justify-content: center;
+  }
+
+  .au-founder {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .au-founder-text {
+    text-align: right;
+  }
+}

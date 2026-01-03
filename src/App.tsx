@@ -2,6 +2,7 @@ import './App.css'
 import Taskbar from './components/Taskbar'
 import Footer from './components/Footer'
 import HomePage from './pages/HomePage'
+import AboutUs from './pages/Aboutus'
 import CourseRegisterForm from './components/CourseRegisterForm'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css"
@@ -15,7 +16,7 @@ function App() {
         <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/about" element={<div>about</div>} />
+          <Route path="/about" element={<AboutUs />} />
           <Route path="/services" element={<div>services</div>} />
           <Route path="/clubs" element={<div>clubs</div>} />
           <Route path="/branches" element={<div>branches</div>} />
