@@ -7,9 +7,10 @@ type Props = {
 };
 
 export default function AboutUs({ lang }: Props) {
+  const isLTR = lang === "en"; // English = LTR
   return (
     <div className="au-page">
-      <div className="au-container">
+      <div className={`au-container ${isLTR ? "ltr" : "rtl"}`} dir={isLTR ? "ltr" : "rtl"}>
         <div className="au-content">
           <h1 className="au-title">{t(lang, "about.org.title")}</h1>
 
@@ -19,7 +20,7 @@ export default function AboutUs({ lang }: Props) {
 
           <h2 className="au-subtitle">{t(lang, "about.founder.title")}</h2>
 
-          <div className="au-founder">
+          <div className={`au-founder ${isLTR ? "ltr" : "rtl"}`}>
             <div className="au-founder-photo">
               <img src="/founder.jpg" alt="Founder"/>
               <span className="au-founder-name">{t(lang, "about.founder.name")}</span>
@@ -27,7 +28,7 @@ export default function AboutUs({ lang }: Props) {
             </div>
 
             <div className="au-founder-text">
-              <p>{t(lang, "about.founder.subtitle")}</p>
+              <p>"{t(lang, "about.founder.subtitle")}"</p>
               <p>{t(lang, "about.founder.paragraph")}</p>
             </div>
           </div>
