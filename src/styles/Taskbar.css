@@ -34,7 +34,9 @@
     text-align: right;
     line-height: 1.2;
 }
-
+[dir="ltr"] .text {
+    text-align: left;
+}
 .title {
     font-size: 22px;
     font-weight: bold;
@@ -118,6 +120,34 @@
         font-size: 18px;
     }
 }
+
+/* LANGUAGE SWITCH */
+.lang-switch {
+    display: flex;
+    gap: 6px;
+    margin-left: 14px;
+}
+
+.lang-switch button {
+    border: 1px solid #ccc;
+    background: white;
+    padding: 4px 8px;
+    font-size: 13px;
+    cursor: pointer;
+    border-radius: 4px;
+    color: #333;
+}
+
+.lang-switch button.active {
+    background: #0a7cff;
+    color: white;
+    border-color: #0a7cff;
+}
+
+.lang-switch button:hover {
+    opacity: 0.85;
+}
+
 
 /* =========================
    MOBILE (≤ 768px)
