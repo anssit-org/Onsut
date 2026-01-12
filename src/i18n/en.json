@@ -31,6 +31,22 @@
   "footer": {
     "organization": "Onsut Organization",
     "rights": "All rights reserved"
+  },
+  "about": {  
+  "org": {
+    "title": "About Us",
+    "paragraph1": "Onsut Association for the support of the deaf and hard of hearing is the first association of its kind in the Arab community in the country. It was established in 2013 by Mr. Shadi Eid from the city of Kfar Qara, who has suffered from hearing difficulties since birth. His struggle led him to take the initiative to create a warm home that initially included members of the deaf and hard-of-hearing community from his city, eventually expanding to reach the largest number of deaf and hard-of-hearing individuals from various regions across the country.",
+    "paragraph2": "Today, this warm home has become the largest association in the country within the Arab community supporting deaf and hard-of-hearing individuals. It offers a wide range of services in various fields, which will be detailed in the pages of this humble magazine that we are proud to present to you. This reflects a decade of continuous work, great efforts, and careful, dedicated follow-up to reach the level of excellence we have today at Onsut Association with the deaf and hard-of-hearing community.",
+    "paragraph3": "Onsut Association is distinguished by its inclusiveness, diversity, and uniqueness in everything it offers to the deaf and hard-of-hearing community. The association’s management does not only ensure the rights of its members or oversee their access to these rights; the entire team works to be a genuine partner to every individual in the community across all aspects of their lives. This includes shaping their personality and identity, enhancing their social status, and enabling them to choose the professional path suitable for their life, aiming for independence and to become active, contributing members of society in the place each person aspires to."
+  },
+  "founder": {
+    "title": "A Word from the Founder",
+    "subtitle": "I was not like them; they heard with their ears, while I heard with my heart",
+    "paragraph": "The call of the heart surpasses and overcomes all difficulties, and this call was the first source of inspiration for what we are today at Onsut Association. I began my journey with this dream, as I previously called it, many years ago, taking the first step toward its realization in 2013. It was the greatest initiative for me, which I worked to bring to life and establish.",
+    "name": "Shadi Eid",
+    "position": "Founder of Onsut Association"
   }
+}
+
     
 }

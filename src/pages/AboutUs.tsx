@@ -1,46 +1,34 @@
-import React from 'react'
 import '../styles/AboutUs.css'
+import type { Lang } from "../App";
+import { t } from "../i18n/Translations";
 
-export default function AboutUs() {
+type Props = {
+  lang: Lang;
+};
+
+export default function AboutUs({ lang }: Props) {
   return (
     <div className="au-page">
       <div className="au-container">
         <div className="au-content">
-          <h1 className="au-title">من نحن</h1>
+          <h1 className="au-title">{t(lang, "about.org.title")}</h1>
 
-          <p>
-            جمعية أنصت لدعم الصم وثقيلي السمع هي الجمعية الأولى من نوعها في المجتمع العربي في البلاد والتي تأسست عام 2013 على يد السيد شادي عبد ابن مدينة كفر قرع والذي عانى من صعوبات في السمع منذ ولادته،
-            حيث قادته معاناته للمبادرة في إنشاء بيت دافئ يضم أفراد من مجتمع الصم وثقيلي السمع من أبناء مدينته في بادئ الأمر وصولاً لأكبر عدد من الصم وثقيلي السمع من مختلف المناطق والبلاد لاحقاً
-          </p>
+          <p>{t(lang, "about.org.paragraph1")}</p>
+          <p>{t(lang, "about.org.paragraph2")}</p>
+          <p>{t(lang, "about.org.paragraph3")}</p>
 
-          <p>
-            ليصبح هذا البيت الدافئ اليوم الجمعية الأكبر في البلاد في المجتمع العربي لدعم مجتمع الصم وثقيلي السمع والتي تشمل العديد من الخدمات المتنوعة في شتى المجالات والتي سيأتي الحديث عنها مفصلاً في صفحات هذه المجلة المتواضعة التي نفخر بأن نضعها بين أيديكم والتي تمثل مسيرة عمل دؤوب وجهود كبيرة ومتابعة بحرص وأمانة طيلة عشر سنوات ماضية للوصول لما نحن عليه اليوم في جمعية أنصت مع مجتمع الصم وثقيلي السمع
-          </p>
+          <h2 className="au-subtitle">{t(lang, "about.founder.title")}</h2>
 
-          <p>
-            هذا وتتميز جمعية أنصت بشمولها وتنوعها واختلافها بكل ما تقوم بتقديمه لمجتمع الصم وثقيلي السمع، حيث أن إدارة الجمعية لا تكتفي في تحصيل حقوق أفرادها أو كشفهم على هذه الحقوق ونحو ذلك إلا أنه الجمعية بكافة طواقمها تعمل على أن تكون شريكة حقيقية لكل فرد من مجتمع الصم وثقيلي السمع في شتى جوانب حياته وعلى رأسها صقل شخصيته وهويته وتعزيز مكانته المجتمعية وتمكينه من اختيار المسار المهني المناسب لحياته سعياً في تحقيق استقلاليته وليكون فرداً فعالاً في مجتمعه في المكان الذي يصبو كل فرد منهم إليه
-          </p>
-
-          <h2 className="au-subtitle">كلمة من المؤسس</h2>
-
-          {/* Founder section */}
           <div className="au-founder">
             <div className="au-founder-photo">
-              <img src="/founder.jpg" />
-              <span className="au-founder-name">شادي عيد</span>
-              <span className="au-founder-role">مؤسس جمعية انصت أنصت</span>
+              <img src="/founder.jpg" alt="Founder"/>
+              <span className="au-founder-name">{t(lang, "about.founder.name")}</span>
+              <span className="au-founder-role">{t(lang, "about.founder.position")}</span>
             </div>
 
             <div className="au-founder-text">
-              <p>
-                "لم أكن مثلهم، فهم كانوا يسمعون بآذانهم وأنا كنت أسمع بقلبي"
-              </p>
-
-              <p>
-                إن نداء القلب يفوق ويتغلب على كل الصعوبات، وهذا النداء كان مصدر الإلهام الأول لما نحن عليه اليوم في جمعية أنصت،
-                فقد بدأت رحلتي مع هذا الحلم كما سميته سابقاً منذ أعوام كثيرة وخطوت أول خطوة في تحقيق ذلك في عام 2013،
-                فكانت المبادرة الأكبر بالنسبة لي التي أقوم على إحيائها وتأسيسها
-              </p>
+              <p>{t(lang, "about.founder.subtitle")}</p>
+              <p>{t(lang, "about.founder.paragraph")}</p>
             </div>
           </div>
 

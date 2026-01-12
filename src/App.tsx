@@ -33,7 +33,7 @@ function App() {
         <main className="page-content">
           <Routes>
             <Route path="/" element={<HomePage lang={lang}/>} />
-            <Route path="/about" element={<AboutUs />} />
+            <Route path="/about" element={<AboutUs lang={lang}/>} />
             <Route path="/services" element={<div>services</div>} />
             <Route path="/clubs" element={<div>clubs</div>} />
             <Route path="/branches" element={<div>branches</div>} />
