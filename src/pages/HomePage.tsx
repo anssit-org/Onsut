@@ -1,8 +1,14 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 import '../styles/Homepage.css'
+import type { Lang } from "../App";
+import { t } from "../i18n/Translations";
 
-export default function HomePage() {
+type Props = {
+  lang: Lang;
+};
+
+
+export default function HomePage({ lang }: Props) {
   return (
     <div className="homepage">
       {/* Hero */}
@@ -16,15 +22,10 @@ export default function HomePage() {
 
       {/* About */}
       <div className="hm-about-us">
-        <h1>من نحن</h1>
+        <h1>{t(lang, "home.about.title")}</h1>
         <div className="hm-about-content">
-          <p>
-            جمعية أنصت هي منظمة غير ربحية تأسست عام 2013، وتتخذ من كفر قرع مقرًا رئيسيًا لها.
-            تأسست الجمعية لتكون بمثابة المرجع والعنوان الآمن للأشخاص مع عجز في السمع.
-          </p>
-          <p>
-            تتركز مهمتها في تمكينهم، دعمهم، وتنمية قدراتهم ليكونوا جزءًا فاعلًا ومستقلًا في المجتمع.
-          </p>
+          <p>{t(lang, "home.about.subtitle1")}</p>
+          <p>{t(lang, "home.about.subtitle2")}</p>
         </div>
       </div>
 
@@ -41,31 +42,31 @@ export default function HomePage() {
       <div className="hm-stats">
         <div className="hm-stat-box">
           <span className="stat-number">1500+</span>
-          <span className="stat-text">أشخاص تمت مساعدتهم</span>
+          <span className="stat-text">{t(lang, "home.stats.helped")}</span>
         </div>
         <div className="hm-stat-box">
           <span className="stat-number">100+</span>
-          <span className="stat-text">متطوعين</span>
+          <span className="stat-text">{t(lang, "home.stats.volunteers")}</span>
         </div>
         <div className="hm-stat-box">
           <span className="stat-number">50+</span>
-          <span className="stat-text">كورسات</span>
+          <span className="stat-text">{t(lang, "home.stats.courses")}</span>
         </div>
         <div className="hm-stat-box">
           <span className="stat-number">120+</span>
-          <span className="stat-text">فعاليات</span>
+          <span className="stat-text">{t(lang, "home.stats.events")}</span>
         </div>
       </div>
 
       {/* 🔽 Navigation boxes */}
       <div className="hm-nav">
-        <Link to="/about" className="hm-nav-box">من نحن</Link>
-        <Link to="/services" className="hm-nav-box">خدماتنا</Link>
-        <Link to="/clubs" className="hm-nav-box">نادي انصت</Link>
-        <Link to="/branches" className="hm-nav-box">فروعنا</Link>
-        <Link to="/gallery" className="hm-nav-box">معرض النشاطات</Link>
-        <Link to="/support" className="hm-nav-box">قم بدعمنا</Link>
-        <Link to="/contact" className="hm-nav-box">تواصل معنا</Link>
+        <Link to="/about" className="hm-nav-box">{t(lang, "taskbar.nav.about")}</Link>
+        <Link to="/services" className="hm-nav-box">{t(lang, "taskbar.nav.services")}</Link>
+        <Link to="/clubs" className="hm-nav-box">{t(lang, "taskbar.nav.clubs")}</Link>
+        <Link to="/branches" className="hm-nav-box">{t(lang, "taskbar.nav.branches")}</Link>
+        <Link to="/gallery" className="hm-nav-box">{t(lang, "taskbar.nav.gallery")}</Link>
+        <Link to="/support" className="hm-nav-box">{t(lang, "taskbar.nav.support")}</Link>
+        <Link to="/contact" className="hm-nav-box">{t(lang, "taskbar.nav.contact")}</Link>
 
       </div>
     </div>

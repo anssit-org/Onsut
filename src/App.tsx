@@ -1,35 +1,52 @@
-import './App.css'
-import Taskbar from './components/Taskbar'
-import Footer from './components/Footer'
-import HomePage from './pages/HomePage'
-import AboutUs from './pages/Aboutus'
-import CourseRegisterForm from './components/CourseRegisterForm'
+import { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import "./App.css"
+
+import "./App.css";
+import Taskbar from "./components/Taskbar";
+import Footer from "./components/Footer";
+import HomePage from "./pages/HomePage";
+import AboutUs from "./pages/AboutUs";
+
+export type Lang = "ar" | "he" | "en";
+
 function App() {
+  // 🌍 Global language state (default Arabic)
+  const [lang, setLang] = useState<Lang>(() => {
+    return (localStorage.getItem("lang") as Lang) || "ar";
+  });
+
+  // 🔄 Update document direction, language & persist choice
+  useEffect(() => {
+    const isRTL = lang === "ar" || lang === "he";
+
+    document.documentElement.dir = isRTL ? "rtl" : "ltr";
+    document.documentElement.lang = lang;
+
+    localStorage.setItem("lang", lang);
+  }, [lang]);
 
   return (
-    <div className="page-layout">
+    <BrowserRouter>
+      <div className="page-layout">
+        <Taskbar lang={lang} setLang={setLang} />
 
-      <Taskbar/>
-      <main className="page-content">
-        <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/about" element={<AboutUs />} />
-          <Route path="/services" element={<div>services</div>} />
-          <Route path="/clubs" element={<div>clubs</div>} />
-          <Route path="/branches" element={<div>branches</div>} />
-          <Route path="/gallery" element={<div>gallery</div>} />
-          <Route path="/support" element={<div>support</div>} />
-          <Route path="/contact" element={<div>contact</div>} />
-        </Routes>
-        </BrowserRouter>
-      </main>
-      
-      <Footer/>
-    </div>
-  )
+        <main className="page-content">
+          <Routes>
+            <Route path="/" element={<HomePage lang={lang}/>} />
+            <Route path="/about" element={<AboutUs />} />
+            <Route path="/services" element={<div>services</div>} />
+            <Route path="/clubs" element={<div>clubs</div>} />
+            <Route path="/branches" element={<div>branches</div>} />
+            <Route path="/gallery" element={<div>gallery</div>} />
+            <Route path="/support" element={<div>support</div>} />
+            <Route path="/contact" element={<div>contact</div>} />
+          </Routes>
+        </main>
+
+        <Footer lang={lang}/>
+      </div>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
