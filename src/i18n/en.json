@@ -46,7 +46,12 @@
     "name": "Shadi Eid",
     "position": "Founder of Onsut Association"
   }
-}
-
-    
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Reach out to us via phone, email, or fax. We're here to help!",
+    "phone": "Phone",
+    "email": "Email",
+    "fax": "Fax"
+  } 
 }

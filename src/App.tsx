@@ -6,7 +6,7 @@ import Taskbar from "./components/Taskbar";
 import Footer from "./components/Footer";
 import HomePage from "./pages/HomePage";
 import AboutUs from "./pages/AboutUs";
-
+import ContactUs from "./pages/ContactUs";
 export type Lang = "ar" | "he" | "en";
 
 function App() {
@@ -39,7 +39,7 @@ function App() {
             <Route path="/branches" element={<div>branches</div>} />
             <Route path="/gallery" element={<div>gallery</div>} />
             <Route path="/support" element={<div>support</div>} />
-            <Route path="/contact" element={<div>contact</div>} />
+            <Route path="/contact" element={<div><ContactUs lang={lang}/></div>} />
           </Routes>
         </main>
 
