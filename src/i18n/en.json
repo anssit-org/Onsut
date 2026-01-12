@@ -1,0 +1,36 @@
+{
+  "taskbar": {
+    "nav": {
+      "home": "Home",
+      "about": "About us",
+      "services": "Services",
+      "clubs": "Onsut club",
+      "branches": "Branches",
+      "gallery": "Gallery",
+      "support": "Support us",
+      "contact": "Contact us"
+    },
+    "title": {
+      "name": "Onsut organization",
+      "subtitle": "National association for the advancement of the deaf and hard of earing"
+    }
+  },
+  "home": {
+    "about": {
+      "title": "About Us",
+      "subtitle1": "Onsut Association is a non-profit organization established in 2013, with its main headquarters in Kfar Qara.\nThe association was founded to serve as a safe reference and resource for people with hearing impairments.",
+      "subtitle2": "Its mission focuses on empowering them, supporting them, and developing their abilities so they can be active and independent members of society."
+    },
+    "stats": {
+      "helped": "People Helped",
+      "volunteers": "Volunteers",
+      "courses": "Courses",
+      "events": "Events"
+    }
+  },
+  "footer": {
+    "organization": "Onsut Organization",
+    "rights": "All rights reserved"
+  }
+    
+}

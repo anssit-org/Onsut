@@ -1,14 +1,19 @@
-import { FaFacebookF, FaInstagram } from "react-icons/fa";
 import "../styles/Footer.css";
+import type { Lang } from "../App";
+import { t } from "../i18n/Translations";
 
-export default function Footer() {
+type Props = {
+  lang: Lang;
+};
+
+export default function Footer({ lang }: Props) {
   return (
-    <footer className="site-footer" dir="rtl">
+    <footer className="site-footer" dir={lang === "ar" || lang === "he" ? "rtl" : "ltr"}>
       <div className="footer-bottom">
         <span>
-          © {new Date().getFullYear()} جمعية أُصمت — جميع الحقوق محفوظة
+          © {new Date().getFullYear()} {t(lang, "footer.organization")} — {t(lang, "footer.rights")}
         </span>
       </div>
     </footer>
   );
-};
+}
