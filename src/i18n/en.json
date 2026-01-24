@@ -53,5 +53,43 @@
     "phone": "Phone",
     "email": "Email",
     "fax": "Fax"
-  } 
+  },
+  "support": {
+    "title": "Support Us",
+    "subtitle": "There are many ways to support our mission beyond donations",
+
+    "volunteer": {
+      "title": "Volunteer as a Course Instructor",
+      "description": "If you have knowledge or experience you would like to share, you can volunteer to lead a course or workshop for our members.",
+      "points": [
+        "Teach a short or long-term course",
+        "Share professional or personal expertise",
+        "Make a direct impact through education"
+      ],
+      "cta": "Volunteer to Teach"
+    },
+
+    "partnerships": {
+      "title": "Partnerships & Collaborations",
+      "description": "We work with organizations, institutions, and businesses that share our values and want to create positive impact together.",
+      "points": [
+        "Co-create educational programs",
+        "Collaborate on events or initiatives",
+        "Build long-term community partnerships"
+      ],
+      "cta": "Become a Partner"
+    },
+
+    "hosting": {
+      "title": "Host a Field Trip",
+      "description": "From time to time, we take our members on educational field trips. If you work at a place that can host us, we would love to hear from you.",
+      "points": [
+        "Host a group visit at your workplace",
+        "Offer a behind-the-scenes learning experience",
+        "Inspire members through real-world exposure"
+      ],
+      "cta": "Host Our Members"
+    }
+
+  }
 }
