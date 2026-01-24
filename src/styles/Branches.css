@@ -1,0 +1,96 @@
+/* =========================
+   GLOBAL
+========================= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.b-page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 3rem 1rem;
+  background-color: #f9fafb;
+  overflow-x: hidden;
+  font-family: sans-serif;
+}
+
+.b-page.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+.b-page.ltr {
+  direction: ltr;
+  text-align: left;
+}
+
+/* =========================
+   HERO
+========================= */
+.b-hero {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.b-title {
+  font-size: 2.6rem;
+  color: #2483c5;
+  margin-bottom: 1rem;
+}
+
+.b-subtitle {
+  font-size: 1.9rem;
+  color: #2483c5;
+}
+
+/* =========================
+   BRANCH CARDS (STACKED)
+========================= */
+.b-list {
+  display: flex;
+  flex-direction: column; /* stack vertically */
+  gap: 2rem; /* space between boxes */
+  align-items: center; /* center boxes horizontally */
+}
+
+.b-card {
+  width: 100%;
+  max-width: 600px; /* optional, keeps boxes consistent */
+  background-color: #ffffff;
+  padding: 1.8rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.2s;
+}
+
+.b-card:hover {
+  transform: translateY(-4px);
+}
+
+.b-city {
+  font-size: 1.6rem;
+  color: #2483c5;
+  margin-bottom: 1rem;
+}
+
+.b-text {
+  font-size: 1.1rem;
+  color: #262161;
+  margin-bottom: 0.8rem;
+}
+
+.b-text strong {
+  color: #262161;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 900px) {
+  .b-card {
+    width: 100%;
+    max-width: 100%;
+  }
+}

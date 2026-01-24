@@ -59,7 +59,6 @@
 },
 "contact": {
     "title": "צור קשר",
-    "subtitle": "פנו אלינו בטלפון, דוא\"ל או פקס. אנחנו כאן כדי לעזור!",
     "phone": "טלפון",
     "email": "אימייל",
     "fax": "פקס"
@@ -100,6 +99,39 @@
       ],
       "cta": "ארחו את חברי הארגון"
     }
+  },
+  "branches": {
+    "title": "המרכזים והסניפים שלנו",
+    "subtitle": "מצא מרכז קרוב אליך. כאן אנו משרתים את הקהילות ברחבי הארץ.",
+    "address": "כתובת",
+    "phone": "טלפון",
+    "hours": "שעות פתיחה",
+    "list": {
+      "kfar_qara": {
+        "city": "כפר קרא",
+        "address": ""
+      },
+      "kfar_qasm": {
+        "city": "כפר קאסם",
+        "address": ""
+      },
+      "nazereth": {
+        "city": "נצרת",
+        "address": ""
+      },
+      "jeser_alzarqa": {
+        "city": "ג'סר אלזרקא",
+        "address": ""
+      },
+      "kasra_sameea": {
+        "city": "כסרא סמע",
+        "address": ""
+      },
+      "qalansawa": {
+        "city": "קלנסווה",
+        "address": ""
+      }
+  }
   }
 
 }

@@ -101,5 +101,37 @@
       "cta": "Host Our Members"
     }
 
+  },
+  "branches": {
+    "title": "Our Centers & Branches",
+    "address": "Address",
+    "phone": "Phone",
+    "hours": "Opening Hours",
+    "list": {
+      "kfar_qara": {
+        "city": "Kfar Qara",
+        "address": ""
+      },
+      "kfar_qasm": {
+        "city": "Kafr Qasim",
+        "address": ""
+      },
+      "nazereth": {
+        "city": "Nazareth",
+        "address": ""
+      },
+      "jeser_alzarqa": {
+        "city": "Jisr al-Zarqa",
+        "address": ""
+      },
+      "kasra_sameea": {
+        "city": "Kasra Sameea",
+        "address": ""
+      },
+      "qalansawa": {
+        "city": "Qalansawe",
+        "address": ""
+      }
+  }
   }
 }
