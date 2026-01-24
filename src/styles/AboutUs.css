@@ -69,6 +69,16 @@
   color: #262161;
   margin-bottom: 1.2rem;
 }
+.au-list {
+  padding-left: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.au-list li {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  color: #262161;
+}
 
 /* =========================
    FOUNDER SECTION
@@ -118,7 +128,7 @@
 /* Founder text */
 .au-founder-text p:first-child {
   font-style: italic;
-  font-size: 1.15rem;
+  font-size: 1.1rem;
 }
 
 /* =========================

@@ -18,8 +18,7 @@ export default function AboutUs({ lang }: Props) {
           <p>{t(lang, "about.org.paragraph2")}</p>
           <p>{t(lang, "about.org.paragraph3")}</p>
 
-          <h2 className="au-subtitle">{t(lang, "about.founder.title")}</h2>
-
+          <h2 className="au-title">{t(lang, "about.founder.title")}</h2>
           <div className={`au-founder ${isLTR ? "ltr" : "rtl"}`}>
             <div className="au-founder-photo">
               <img src="/founder.jpg" alt="Founder"/>
@@ -32,7 +31,17 @@ export default function AboutUs({ lang }: Props) {
               <p>{t(lang, "about.founder.paragraph")}</p>
             </div>
           </div>
-
+          <h1 className="au-title">{t(lang, "about.org.achievments")}</h1>
+          <ul className='au-list'>
+            <li>{t(lang, "about.org.achievment1")}</li>
+            <li>{t(lang, "about.org.achievment2")}</li>
+            <li>{t(lang, "about.org.achievment3")}</li>
+            <li>{t(lang, "about.org.achievment4")}</li>
+            <li>{t(lang, "about.org.achievment5")}</li>
+            <li>{t(lang, "about.org.achievment6")}</li>
+            <li>{t(lang, "about.org.achievment7")}</li>
+            <li>{t(lang, "about.org.achievment8")}</li>
+          </ul>
         </div>
       </div>
     </div>
