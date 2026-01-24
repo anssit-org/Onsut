@@ -31,16 +31,16 @@ export default function AboutUs({ lang }: Props) {
               <p>{t(lang, "about.founder.paragraph")}</p>
             </div>
           </div>
-          <h1 className="au-title">{t(lang, "about.org.achievments")}</h1>
+          <h1 className="au-title">{t(lang, "about.achievments.title")}</h1>
           <ul className='au-list'>
-            <li>{t(lang, "about.org.achievment1")}</li>
-            <li>{t(lang, "about.org.achievment2")}</li>
-            <li>{t(lang, "about.org.achievment3")}</li>
-            <li>{t(lang, "about.org.achievment4")}</li>
-            <li>{t(lang, "about.org.achievment5")}</li>
-            <li>{t(lang, "about.org.achievment6")}</li>
-            <li>{t(lang, "about.org.achievment7")}</li>
-            <li>{t(lang, "about.org.achievment8")}</li>
+            <li>{t(lang, "about.achievments.1")}</li>
+            <li>{t(lang, "about.achievments.2")}</li>
+            <li>{t(lang, "about.achievments.3")}</li>
+            <li>{t(lang, "about.achievments.4")}</li>
+            <li>{t(lang, "about.achievments.5")}</li>
+            <li>{t(lang, "about.achievments.6")}</li>
+            <li>{t(lang, "about.achievments.7")}</li>
+            <li>{t(lang, "about.achievments.8")}</li>
           </ul>
         </div>
       </div>
