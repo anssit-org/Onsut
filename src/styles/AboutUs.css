@@ -64,7 +64,7 @@
    PARAGRAPHS
 ========================= */
 .au-content p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   line-height: 1.9;
   color: #262161;
   margin-bottom: 1.2rem;
@@ -76,7 +76,7 @@
 
 .au-list li {
   margin-bottom: 0.5rem;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   color: #262161;
 }
 
@@ -115,20 +115,20 @@
 .au-founder-name {
   display: block;
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   color: #2483c5;
 }
 
 .au-founder-role {
   display: block;
-  font-size: 0.9rem;
+  font-size: 1.4rem;
   color: #262161;
 }
 
 /* Founder text */
 .au-founder-text p:first-child {
   font-style: italic;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
 }
 
 /* =========================
