@@ -7,6 +7,9 @@
   box-sizing: border-box;
 }
 
+/* =========================
+   PAGE
+========================= */
 .b-page {
   width: 100%;
   min-height: 100vh;
@@ -36,32 +39,52 @@
 .b-title {
   font-size: 2.6rem;
   color: #2483c5;
-  margin-bottom: 1rem;
-}
-
-.b-subtitle {
-  font-size: 1.9rem;
-  color: #2483c5;
 }
 
 /* =========================
-   BRANCH CARDS (STACKED)
+   CENTRAL BRANCH
 ========================= */
-.b-list {
+.b-central {
   display: flex;
-  flex-direction: column; /* stack vertically */
-  gap: 2rem; /* space between boxes */
-  align-items: center; /* center boxes horizontally */
+  justify-content: center;
+  margin-bottom: 3.5rem;
 }
 
-.b-card {
+.b-central-card {
   width: 100%;
-  max-width: 600px; /* optional, keeps boxes consistent */
+  max-width: 900px;            /* bigger than other branches */
+  padding: 2.4rem;
+  border-radius: 14px;
+  border: 2px solid #2483c5;
+  background-color: #f7f7f7;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+}
+
+/* Keep hours in one line on desktop */
+.b-central-card .b-text {
+  white-space: nowrap;
+}
+
+/* =========================
+   OTHER BRANCHES ROW
+========================= */
+.b-row {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   BRANCH CARDS
+========================= */
+.b-card {
   background-color: #f7f7f7;
   padding: 1.8rem;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-  transition: transform 0.2s;
+  width: 380px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
 }
 
 .b-card:hover {
@@ -69,25 +92,46 @@
 }
 
 .b-city {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   color: #2483c5;
   margin-bottom: 1rem;
 }
 
 .b-text {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   color: #262161;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.6rem;
 }
 
 .b-text strong {
   color: #262161;
+}
+.b-phone {
+  direction: ltr;
+  unicode-bidi: embed;
+  display: inline-block;
 }
 
 /* =========================
    RESPONSIVE
 ========================= */
 @media (max-width: 900px) {
+  .b-central-card {
+    max-width: 100%;
+  }
+
+  /* Allow wrapping on small screens */
+  .b-central-card .b-text {
+    white-space: normal;
+  }
+}
+
+@media (max-width: 768px) {
+  .b-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .b-card {
     width: 100%;
     max-width: 100%;

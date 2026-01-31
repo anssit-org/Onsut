@@ -1,12 +1,15 @@
 import "../styles/SupportUs.css"
 import type { Lang } from "../App";
 import { t } from "../i18n/Translations";
+import { useNavigate } from "react-router-dom";
 
 type Props = {
   lang: Lang;
 };
 
 function SupportUs({ lang }: Props) {
+  const navigate = useNavigate();
+
   return (
     <div className="su-page">
       {/* Hero */}
@@ -26,7 +29,8 @@ function SupportUs({ lang }: Props) {
           <li>{t(lang, "support.volunteer.points.2")}</li>
         </ul>
 
-        <button className="su-button">
+        <button className="su-button"
+        onClick={() => navigate("/contact")}>
           {t(lang, "support.volunteer.cta")}
         </button>
       </section>
@@ -42,7 +46,8 @@ function SupportUs({ lang }: Props) {
           <li>{t(lang, "support.partnerships.points.2")}</li>
         </ul>
 
-        <button className="su-button">
+        <button className="su-button"
+        onClick={() => navigate("/contact")}>
           {t(lang,"support.partnerships.cta")}
         </button>
       </section>
@@ -58,7 +63,8 @@ function SupportUs({ lang }: Props) {
           <li>{t(lang, "support.hosting.points.2")}</li>
         </ul>
 
-        <button className="su-button">
+        <button className="su-button"
+        onClick={() => navigate("/contact")}>
           {t(lang, "support.hosting.cta")}
         </button>
       </section>

@@ -118,6 +118,7 @@
     "address": "כתובת",
     "phone": "טלפון",
     "hours": "שעות פתיחה",
+    "working_hours": "ימים א׳–ה׳ 08:00–15:00",
     "list": {
       "kfar_qara": {
         "city": "כפר קרא",

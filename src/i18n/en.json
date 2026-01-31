@@ -120,6 +120,7 @@
     "address": "Address",
     "phone": "Phone",
     "hours": "Opening Hours",
+    "working_hours": "Sun-Thu 08:00 - 15:00",
     "list": {
       "kfar_qara": {
         "city": "Kfar Qara",
