@@ -1,0 +1,91 @@
+.sc-page {
+  width: 100%;
+  padding-bottom: 4rem;
+  background-color: #ffffff;
+}
+
+/* =========================
+   HERO (NO BACKGROUND)
+========================= */
+.sc-hero {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.sc-title {
+  font-size: 3.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #2483c5;
+}
+
+.sc-subtitle {
+  font-size: 1.8rem;
+  color: #2483c5;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+.sc-about {
+  max-width: 900px;
+  margin: 2.5rem auto;
+  padding: 3rem 1.5rem;
+}
+
+.sc-section {
+  max-width: 900px;
+  margin: 2.5rem auto;
+  padding: 3rem 1.5rem;
+  background-color: #f7f7f7;
+}
+
+
+/* =========================
+   SECTION TITLES & TEXT
+========================= */
+
+.sc-text {
+  font-size: 1.4rem;
+  line-height: 1.8;
+  color: #262161;
+}
+
+/* =========================
+   LISTS
+========================= */
+.sc-list {
+  list-style: disc;
+  padding-inline-start: 1.5rem;
+  margin-top: 1rem;
+}
+
+.sc-list li {
+  margin-bottom: 0.6rem;
+  font-size: 1.1rem;
+  color: #262161;
+}
+
+/* =========================
+   RTL SUPPORT
+========================= */
+html[dir="rtl"] .sc-list {
+  padding-inline-start: 0;
+  padding-inline-end: 1.5rem;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .sc-title {
+    font-size: 2rem;
+  }
+
+  .sc-section {
+    padding: 2rem 1.2rem;
+  }
+}

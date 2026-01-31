@@ -1,0 +1,106 @@
+
+/* Container */
+.form-wrapper {
+  max-width: 520px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 35px 30px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.40);
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+/* Title */
+.form-title {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* Form */
+.modern-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Two-column row */
+.row {
+  display: flex;
+  gap: 12px;
+}
+
+.row input {
+  flex: 1;
+}
+
+/* Inputs */
+.modern-form input[type="text"],
+.modern-form input[type="email"],
+.modern-form input[type="tel"],
+.modern-form input[type="date"] {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 14px;
+  border: 1px solid #d0d4db;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.modern-form input::placeholder {
+  color: #888;
+}
+
+/* Focus */
+.modern-form input:focus {
+  border-color: #1769ff;
+  box-shadow: 0 0 0 3px rgba(23, 105, 255, 0.15);
+}
+
+/* Checkbox */
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #444;
+  margin-top: 5px;
+}
+
+.checkbox input {
+  width: 16px;
+  height: 16px;
+  accent-color: #1769ff;
+}
+
+/* Button */
+button {
+  margin-top: 10px;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background: #1769ff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s, box-shadow 0.1s;
+}
+
+button:hover {
+  background: #0f5be3;
+}
+
+button:active {
+  transform: translateY(1px);
+  box-shadow: 0 4px 10px rgba(23, 105, 255, 0.4) inset;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .row {
+    flex-direction: column;
+  }
+}

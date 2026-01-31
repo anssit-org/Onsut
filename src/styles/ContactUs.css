@@ -1,0 +1,119 @@
+/* =========================
+   GLOBAL RESET
+========================= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* =========================
+   PAGE LAYOUT
+========================= */
+.contact-page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: 'Helvetica', Arial, sans-serif;
+  color: #262161;
+}
+
+/* =========================
+   HEADER
+========================= */
+.contact-header h1 {
+  font-size: 3.4rem;
+  color: #2483c5;
+  margin-bottom: 0.5rem;
+}
+
+.contact-header p {
+  font-size: 1.6rem;
+  max-width: 600px;
+  margin-bottom: 3rem;
+  color: #444;
+}
+
+/* =========================
+   CONTACT CARDS
+========================= */
+.contact-cards {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 900px;
+  width: 100%;
+}
+
+.contact-card {
+  background-color: #f7f7f7;
+  padding: 2rem 1.5rem;
+  border-radius: 14px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.contact-icon {
+  font-size: 2.5rem;
+  color: #2483c5;
+  margin-bottom: 1rem;
+}
+
+.contact-card h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #2483c5;
+}
+
+.contact-card p {
+  font-size: 1rem;
+  color: #262161;
+  word-wrap: break-word;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .contact-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-card {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-header h1 {
+    font-size: 2rem;
+  }
+
+  .contact-header p {
+    font-size: 1rem;
+  }
+
+  .contact-card h2 {
+    font-size: 1.2rem;
+  }
+
+  .contact-card p {
+    font-size: 0.95rem;
+  }
+}

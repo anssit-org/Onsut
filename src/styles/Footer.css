@@ -1,0 +1,21 @@
+/* =========================
+   FOOTER ROOT
+========================= */
+.site-footer {
+  background: #f7f7f7;
+  color: #777;
+  padding: 20px 25px;
+  font-size: 14px;
+
+  /* 👇 keep the grey line at the top */
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+/* =========================
+   BOTTOM SECTION
+========================= */
+.footer-bottom {
+  text-align: center;
+  font-size: 13px;
+  color: #777;
+}
