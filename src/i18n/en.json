@@ -150,6 +150,32 @@
         "city": "Deir Hanna",
         "address": "Tankeen center"
       }
+    }
+  },
+  "clubs": {
+  "general": {
+    "title": "Recreational Club for the Deaf",
+    "subtitle": "A safe social space aimed at empowering deaf and hard-of-hearing individuals and fostering communication and belonging.",
+    "aboutTitle": "About the Club",
+    "aboutText": "The Recreational Club for the Deaf is a social framework designed to bring together deaf and hard-of-hearing individuals in a supportive and stimulating environment, helping them interact and participate in various activities that enhance quality of life.",
+    "goalsTitle": "Club Goals",
+    "goals": [
+      "Enhance social communication among members",
+      "Strengthen a sense of belonging and community participation",
+      "Empower members psychologically and socially",
+      "Develop personal skills",
+      "Provide a safe and supportive environment"
+    ],
+    "activitiesTitle": "Activities and Services",
+    "activities": [
+      "Trips and recreational activities",
+      "Regular meetings and gatherings",
+      "Religious and educational lectures",
+      "Awareness and guidance lectures",
+      "Various social activities"
+    ],
+    "scheduleTitle": "Activity Schedule",
+    "scheduleText": "The days and hours of activities vary depending on the club and branch, and schedules are announced through official channels."
   }
-  }
+}
 }
