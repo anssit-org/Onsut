@@ -121,30 +121,34 @@
     "working_hours": "ימים א׳–ה׳ 08:00–15:00",
     "list": {
       "kfar_qara": {
-        "city": "כפר קרא",
-        "address": ""
+      "city": "כפר קרע - המרכז הראשי",
+      "address": "רחוב הראשי, רחוב ירושלים"
       },
       "kfar_qasm": {
         "city": "כפר קאסם",
-        "address": ""
+        "address": "רחוב הזית"
       },
       "nazereth": {
         "city": "נצרת",
-        "address": ""
+        "address": "מתנ\"ס יפו נצרת"
       },
       "jeser_alzarqa": {
-        "city": "ג'סר אלזרקא",
-        "address": ""
+        "city": "גשר אלזרקה",
+        "address": "מתנ\"ס גשר אלזרקה"
       },
       "kasra_sameea": {
-        "city": "כסרא סמע",
-        "address": ""
+        "city": "קסרה סמע",
+        "address": "קסרה רחוב 13"
       },
       "qalansawa": {
         "city": "קלנסווה",
-        "address": ""
+        "address": "מרכז מועדון החרשים, מאחורי בניין הרווחה"
+      },
+      "deir_hanna": {
+        "city": "דייר חנא",
+        "address": "מרכז תמקין"
       }
-  }
+    }
   }
 
 }

@@ -123,28 +123,32 @@
     "working_hours": "Sun-Thu 08:00 - 15:00",
     "list": {
       "kfar_qara": {
-        "city": "Kfar Qara",
-        "address": ""
+      "city": "Kfar Qara - Main Branch",
+      "address": "Main Street, Jerusalem Street"
       },
       "kfar_qasm": {
-        "city": "Kafr Qasim",
-        "address": ""
+        "city": "Kfar Qasim",
+        "address": "Olive Street"
       },
       "nazereth": {
         "city": "Nazareth",
-        "address": ""
+        "address": "Yafa Street, Nazareth"
       },
       "jeser_alzarqa": {
         "city": "Jisr al-Zarqa",
-        "address": ""
+        "address": "Jisr al-Zarqa Street"
       },
       "kasra_sameea": {
         "city": "Kasra Sameea",
-        "address": ""
+        "address": "Street 13, Kasra"
       },
       "qalansawa": {
-        "city": "Qalansawe",
-        "address": ""
+        "city": "Qalansawa",
+        "address": "Deaf Club Center, behind Social Affairs Building"
+      },
+      "deir_hanna": {
+        "city": "Deir Hanna",
+        "address": "Tankeen center"
       }
   }
   }

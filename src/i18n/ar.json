@@ -122,28 +122,32 @@
     "working_hours": "الأحد - الخميس 08:00 - 15:00",
     "list": {
       "kfar_qara": {
-        "city": "كفر قرع",
-        "address": ""
+        "city": "كفر قرع - المركز الرئيسي",
+        "address": "الشارع الرئيسي, شارع القدس"
       },
       "kfar_qasm": {
         "city": "كفر قاسم",
-        "address": ""
+        "address": "شارع الزيتون"
       },
       "nazereth": {
         "city": "الناصرة",
-        "address": ""
+        "address": "متناس يافا الناصرة"
       },
       "jeser_alzarqa": {
         "city": "جسر الزرقا",
-        "address": ""
+        "address": "متناس جسر الزرقاء"
       },
       "kasra_sameea": {
         "city": "كسرى سميع",
-        "address": ""
+        "address": "كسرى شارع 13"
       },
       "qalansawa": {
         "city": "قلنسوة",
-        "address": ""
+        "address": "مركز نادي الصم خلف مبنى الشؤن الاجتماعية"
+      },
+      "deir_hanna": {
+        "city": "دير حنا",
+        "address": "مركز تمكين"
       }
     }
   }

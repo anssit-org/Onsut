@@ -15,13 +15,14 @@ export type Branch = {
 const BranchesArr: Branch[] = [
   {
     key: "kfar_qara",
-    hours: "Sun–Thu 09:00 – 17:00",
     isCentral: true
   },
   { key: "kfar_qasm" },
   { key: "nazereth" },
   { key: "jeser_alzarqa" },
-  { key: "qalansawa"}
+  { key: "qalansawa"},
+  { key: "kasra_sameea"},
+  { key: "deir_hanna"},
 ];
 
 function Branches({ lang }: Props) {
