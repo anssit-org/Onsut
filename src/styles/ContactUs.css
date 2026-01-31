@@ -26,13 +26,13 @@
    HEADER
 ========================= */
 .contact-header h1 {
-  font-size: 2.5rem;
-  color: #0a7cff;
+  font-size: 3.4rem;
+  color: #2483c5;
   margin-bottom: 0.5rem;
 }
 
 .contact-header p {
-  font-size: 1.1rem;
+  font-size: 1.6rem;
   max-width: 600px;
   margin-bottom: 3rem;
   color: #444;
@@ -70,14 +70,14 @@
 
 .contact-icon {
   font-size: 2.5rem;
-  color: #0a7cff;
+  color: #2483c5;
   margin-bottom: 1rem;
 }
 
 .contact-card h2 {
   font-size: 1.3rem;
   margin-bottom: 0.5rem;
-  color: #0a7cff;
+  color: #2483c5;
 }
 
 .contact-card p {

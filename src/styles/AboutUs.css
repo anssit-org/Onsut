@@ -48,13 +48,13 @@
    HEADINGS
 ========================= */
 .au-title {
-  font-size: 2.6rem;
+  font-size: 3.7rem;
   margin-bottom: 1.8rem;
   color: #2483c5;
 }
 
 .au-subtitle {
-  font-size: 1.9rem;
+  font-size: 2.4rem;
   margin-top: 3.5rem;
   margin-bottom: 1.5rem;
   color: #2483c5;
@@ -64,7 +64,7 @@
    PARAGRAPHS
 ========================= */
 .au-content p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: 1.9;
   color: #262161;
   margin-bottom: 1.2rem;

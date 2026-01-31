@@ -13,14 +13,14 @@
 }
 
 .sc-title {
-  font-size: 2.6rem;
+  font-size: 3.4rem;
   font-weight: 700;
   margin-bottom: 1rem;
   color: #2483c5;
 }
 
 .sc-subtitle {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   color: #2483c5;
   max-width: 700px;
   margin: 0 auto;
@@ -49,7 +49,7 @@
 ========================= */
 
 .sc-text {
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   line-height: 1.8;
   color: #262161;
 }

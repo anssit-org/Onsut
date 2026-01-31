@@ -12,13 +12,13 @@
 }
 
 .su-title {
-  font-size: 2.2rem;
+  font-size: 3.5rem;
   margin-bottom: 0.5rem;
   color: #2483c5;
 }
 
 .su-subtitle {
-  font-size: 1.1rem;
+  font-size: 2.8rem;
   color: #2483c5;
 }
 
@@ -35,13 +35,13 @@
 }
 
 .su-section-title {
-  font-size: 1.6rem;
+  font-size: 2.2rem;
   margin-bottom: 1rem;
   color: #2483c5;
 }
 
 .su-text {
-  font-size: 1rem;
+  font-size: 1.5rem;
   line-height: 1.6;
   margin-bottom: 1rem;
   color: #262161;
@@ -56,6 +56,7 @@
 .su-list li {
   margin-bottom: 0.5rem;
   color: #262161;
+  font-size: 1.5rem;
 }
 
 /* BUTTON */
