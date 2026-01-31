@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import '../styles/Homepage.css'
+import '../styles/HomePage.css'
 import type { Lang } from "../App";
 import { t } from "../i18n/Translations";
 
