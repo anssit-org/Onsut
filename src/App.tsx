@@ -10,6 +10,7 @@ import ContactUs from "./pages/ContactUs";
 import SupportUs from "./pages/SupportUs";
 import Branches from "./pages/Branches";
 import Clubs from "./pages/Club";
+import Services from "./pages/Services";
 export type Lang = "ar" | "he" | "en";
 
 function App() {
@@ -37,7 +38,7 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage lang={lang}/>} />
             <Route path="/about" element={<AboutUs lang={lang}/>} />
-            <Route path="/services" element={<div>services</div>} />
+            <Route path="/services" element={<div><Services lang={lang}/></div>} />
             <Route path="/clubs" element={<div><Clubs lang={lang}/></div>} />
             <Route path="/branches" element={<div><Branches lang={lang}/></div>} />
             <Route path="/gallery" element={<div>gallery</div>} />

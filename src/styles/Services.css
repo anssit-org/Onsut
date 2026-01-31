@@ -1,0 +1,164 @@
+/* =========================
+   GLOBAL
+========================= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* =========================
+   PAGE
+========================= */
+.services-page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 3rem 1rem;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services-page.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+.services-page.ltr {
+  direction: ltr;
+  text-align: left;
+}
+
+/* =========================
+   PAGE TITLE
+========================= */
+.services-title {
+  font-size: 4.5rem;
+  margin-bottom: 2.5rem;
+  color: #2483c5;
+  text-align: center;
+}
+
+/* =========================
+   BUTTON GRID
+========================= */
+.services-buttons {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 buttons per row */
+  gap: 1rem;
+  max-width: 1200px;
+  margin-bottom: 3rem;
+}
+
+.service-btn {
+  background-color: #2483c5;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 1.2rem 0.8rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  height: 70px; /* uniform height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.2; /* ensure multi-line text fits */
+  word-wrap: break-word;
+}
+
+.service-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.service-btn.active {
+  background-color: #0a7cff;
+}
+
+/* =========================
+   DISPLAY AREA
+========================= */
+.services-display {
+  max-width: 900px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.services-display img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 14px;
+  object-fit: cover;
+}
+
+.services-display p {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: #262161;
+  text-align: justify;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 1200px) {
+  .services-buttons {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .services-buttons {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .services-buttons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .service-btn {
+    font-size: 1rem;
+    height: 90px;
+  }
+
+  .services-display p {
+    font-size: 1.15rem;
+  }
+
+  .services-title {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-buttons {
+    grid-template-columns: 1fr;
+  }
+
+  .service-btn {
+    font-size: 0.95rem;
+    height: 80px;
+  }
+
+  .services-title {
+    font-size: 2rem;
+  }
+
+  .services-display p {
+    font-size: 1rem;
+  }
+}
