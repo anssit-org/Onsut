@@ -11,6 +11,7 @@ import SupportUs from "./pages/SupportUs";
 import Branches from "./pages/Branches";
 import Clubs from "./pages/Club";
 import Services from "./pages/Services";
+import Gallery from "./pages/Gallery";
 export type Lang = "ar" | "he" | "en";
 
 function App() {
@@ -41,7 +42,7 @@ function App() {
             <Route path="/services" element={<div><Services lang={lang}/></div>} />
             <Route path="/clubs" element={<div><Clubs lang={lang}/></div>} />
             <Route path="/branches" element={<div><Branches lang={lang}/></div>} />
-            <Route path="/gallery" element={<div>gallery</div>} />
+            <Route path="/gallery" element={<div><Gallery lang={lang}/></div>} />
             <Route path="/support" element={<div><SupportUs lang={lang}/></div>} />
             <Route path="/contact" element={<div><ContactUs lang={lang}/></div>} />
           </Routes>
