@@ -1,7 +1,13 @@
 import React, { useState } from "react";
 import "../styles/CourseRegisterForm.css";
+import { t } from "../i18n/Translations"; // your translation helper
+import type { Lang } from "../App";
 
-export default function CourseRegisterForm() {
+type Props = {
+  lang: Lang;
+};
+
+export default function CourseRegisterForm({ lang }: Props) {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -27,7 +33,7 @@ export default function CourseRegisterForm() {
     e.preventDefault();
 
     if (!formData.agree) {
-      alert("يجب الموافقة على الشروط أولاً");
+      alert(t(lang, "courseRegisterForm.agreeAlert"));
       return;
     }
 
@@ -36,15 +42,15 @@ export default function CourseRegisterForm() {
   };
 
   return (
-    <div className="form-wrapper" dir="rtl">
-      <h2 className="form-title">التسجيل لدورة لغة الإشارة</h2>
+    <div className="form-wrapper" dir={lang === "ar" || lang === "he" ? "rtl" : "ltr"}>
+      <h2 className="form-title">{t(lang, "courseRegisterForm.title")}</h2>
 
       <form className="modern-form" onSubmit={handleSubmit}>
         <div className="row">
           <input
             type="text"
             name="firstName"
-            placeholder="الاسم الأول"
+            placeholder={t(lang, "courseRegisterForm.firstName")}
             value={formData.firstName}
             onChange={handleChange}
             required
@@ -53,53 +59,54 @@ export default function CourseRegisterForm() {
           <input
             type="text"
             name="lastName"
-            placeholder="اسم العائلة"
+            placeholder={t(lang, "courseRegisterForm.lastName")}
             value={formData.lastName}
             onChange={handleChange}
             required
           />
         </div>
+
         <div className="row">
-            <input
-                type="tel"
-                name="phone"
-                placeholder="الهاتف"
-                value={formData.phone}
-                onChange={handleChange}
-                required
-            />
+          <input
+            type="tel"
+            name="phone"
+            placeholder={t(lang, "courseRegisterForm.phone")}
+            value={formData.phone}
+            onChange={handleChange}
+            required
+          />
         </div>
-        
+
         <div className="row">
-            <input
-                type="email"
-                name="email"
-                placeholder="البريد الإلكتروني"
-                value={formData.email}
-                onChange={handleChange}
-                required
-            />
+          <input
+            type="email"
+            name="email"
+            placeholder={t(lang, "courseRegisterForm.email")}
+            value={formData.email}
+            onChange={handleChange}
+            required
+          />
         </div>
-        
+
         <div className="row">
-            <input
-                type="text"
-                name="address"
-                placeholder="العنوان"
-                value={formData.address}
-                onChange={handleChange}
-            />
+          <input
+            type="text"
+            name="address"
+            placeholder={t(lang, "courseRegisterForm.address")}
+            value={formData.address}
+            onChange={handleChange}
+          />
         </div>
-        
+
         <div className="row">
-            <input
-                type="date"
-                name="birthDate"
-                value={formData.birthDate}
-                onChange={handleChange}
-            />
+          <input
+            type="date"
+            name="birthDate"
+            placeholder={t(lang, "courseRegisterForm.birthDate")}
+            value={formData.birthDate}
+            onChange={handleChange}
+          />
         </div>
-        
 
         <label className="checkbox">
           <input
@@ -108,11 +115,11 @@ export default function CourseRegisterForm() {
             checked={formData.agree}
             onChange={handleChange}
           />
-          <span>أوافق على شروط التسجيل والتواصل معي</span>
+          <span>{t(lang, "courseRegisterForm.agree")}</span>
         </label>
 
-        <button type="submit">تسجيل للدورة الآن</button>
+        <button type="submit">{t(lang, "courseRegisterForm.submit")}</button>
       </form>
     </div>
   );
-};
+}
