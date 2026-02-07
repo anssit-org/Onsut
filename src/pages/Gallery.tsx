@@ -15,7 +15,6 @@ type Section = {
   items: Item[];
 };
 
-// Type for the structure of the imported JSON
 interface GalleryJSON {
   gallery: {
     sections: {
@@ -31,23 +30,24 @@ type Props = {
 
 export default function Gallery({ lang }: Props) {
   const [sections, setSections] = useState<Section[]>([]);
-  const [modalSrc, setModalSrc] = useState<string | null>(null);
+  const [filteredSectionId, setFilteredSectionId] = useState<number | null>(null);
   const [carouselIndices, setCarouselIndices] = useState<{ [key: string]: number }>({});
+  const [modalSrc, setModalSrc] = useState<string | null>(null);
 
   // Load translations dynamically
   useEffect(() => {
-    import(`../i18n/${lang}.json`).then((module: { default: GalleryJSON }) => {
-      const translatedSections: Section[] = module.default.gallery.sections.map((sec, idx) => ({
-        id: idx + 1,
-        title: sec.title,
-        items: sec.items,
-      }));
-      setSections(translatedSections);
-    });
+    if (!lang) return;
+    import(`../i18n/${lang}.json`)
+      .then((module: { default: GalleryJSON }) => {
+        const translatedSections: Section[] = module.default.gallery.sections.map((sec, idx) => ({
+          id: idx,
+          title: sec.title,
+          items: sec.items,
+        }));
+        setSections(translatedSections);
+      })
+      .catch((err) => console.error(err));
   }, [lang]);
-
-  const openModal = (src: string) => setModalSrc(src);
-  const closeModal = () => setModalSrc(null);
 
   const showNext = (itemKey: string, imagesLength: number) => {
     setCarouselIndices((prev) => ({
@@ -63,9 +63,31 @@ export default function Gallery({ lang }: Props) {
     }));
   };
 
+  const openModal = (src: string) => setModalSrc(src);
+  const closeModal = () => setModalSrc(null);
+
+  // Show only the selected section, initially empty
+  const visibleSections =
+    filteredSectionId !== null ? sections.filter((sec) => sec.id === filteredSectionId) : [];
+
   return (
     <div className={`gallery-page ${lang === "ar" || lang === "he" ? "rtl" : "ltr"}`}>
-      {sections.map((section) => (
+      
+      {/* Top filter buttons */}
+      <div className="filter-buttons">
+        {sections.map((sec) => (
+          <button
+            key={sec.id}
+            className={`filter-btn ${filteredSectionId === sec.id ? "active" : ""}`}
+            onClick={() => setFilteredSectionId(sec.id)}
+          >
+            {sec.title}
+          </button>
+        ))}
+      </div>
+
+      {/* Gallery Sections */}
+      {visibleSections.map((section) => (
         <div key={section.id} className="section">
           <h1 className="section-title">{section.title}</h1>
 
@@ -93,7 +115,7 @@ export default function Gallery({ lang }: Props) {
                         src={img}
                         alt={`${item.title} ${startIdx + i + 1}`}
                         className="item-image"
-                        onClick={() => openModal(img)}
+                        onClick={() => openModal(img)} // pass only the clicked image
                       />
                     ))}
                   </div>
@@ -113,6 +135,7 @@ export default function Gallery({ lang }: Props) {
         </div>
       ))}
 
+      {/* Modal */}
       {modalSrc && <ImageModal src={modalSrc} onClose={closeModal} />}
     </div>
   );

@@ -3,14 +3,46 @@
   background-color: #f9f9f9;
 }
 
-/* Section */
+/* Filter buttons */
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.filter-btn {
+  background-color: #2483c5;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.filter-btn:hover {
+  background-color: #1f6fa1;
+}
+
+.filter-btn.active {
+  background-color: #1b5d88;
+}
+
+.filter-btn.clear {
+  background-color: #777;
+}
+
+/* Section titles */
 .section {
   margin-bottom: 3rem;
 }
 
 .section-title {
   font-size: 2rem;
-  color: #2483c5; /* Titles color */
+  color: #2483c5;
   margin-bottom: 1rem;
 }
 
@@ -20,15 +52,14 @@
 }
 
 .item-title {
-  font-size: 2.5rem;
-  color: #2483c5; /* Subtitle color */
+  font-size: 1.5rem;
+  color: #2483c5;
   margin-bottom: 0.5rem;
 }
 
 .item-description {
-  color: #262161; /* Text color */
+  color: #262161;
   margin-bottom: 1rem;
-  font-size: 1.6rem;
 }
 
 /* Carousel */
@@ -47,8 +78,8 @@
 }
 
 .item-image {
-  flex: 1 0 calc((100% / 5) - 0.5rem); /* 5 images almost full width */
-  height: 180px; /* adjust as needed */
+  flex: 1 0 calc((100% / 5) - 0.5rem);
+  height: 180px;
   object-fit: cover;
   border-radius: 6px;
   cursor: pointer;
@@ -77,26 +108,6 @@
 
 .carousel-arrow.right {
   margin-left: 0.5rem;
-}
-
-/* Modal */
-.modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-}
-
-.modal-image {
-  max-width: 90%;
-  max-height: 90%;
-  border-radius: 8px;
 }
 
 /* RTL/LTR support */
