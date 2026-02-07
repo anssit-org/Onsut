@@ -1,64 +1,82 @@
-
 /* =========================
    MAIN BAR (DESKTOP)
 ========================= */
 .taskbar {
-    position: sticky; /* 👈 stays at top when scrolling */
+    position: sticky;
     top: 0;
-    z-index: 1000; /* 👈 stays above page content */
+    z-index: 1000;
 
-    height: 80px;
+    height: 6.25rem; /* 100px */
     background: #f7f7f7;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 30px;
+
+    padding: 0 1.875rem;
     box-sizing: border-box;
 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.25);
 }
 
-/* RIGHT — LOGO + TEXT */
+/* =========================
+   RIGHT — LOGO + TEXT
+========================= */
 .logoText {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 0.75rem;
+    min-width: 0;
 }
 
 .logo {
-    height: 80px;
+    height: 5rem;
     object-fit: contain;
+    flex-shrink: 0;
 }
 
 .text {
     text-align: right;
     line-height: 1.2;
+    min-width: 0;
+    overflow: hidden;
 }
+
 [dir="ltr"] .text {
     text-align: left;
 }
+
 .title {
-    font-size: 22px;
+    font-size: 1.875rem;
     font-weight: bold;
     color: #777;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .subtitle {
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #777;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-/* CENTER — NAV */
+/* =========================
+   CENTER — NAV
+========================= */
 .nav {
     display: flex;
-    gap: 20px;
+    gap: 1.25rem;
+    min-width: 0;
 }
 
 .nav a {
     text-decoration: none;
     color: #333;
-    font-size: 16px;
-    padding: 6px 10px;
+    font-size: 1.4rem;
+    padding: 0.375rem 0.625rem;
     white-space: nowrap;
 }
 
@@ -66,20 +84,24 @@
     color: #0a7cff;
 }
 
-/* LEFT — SOCIAL ICONS */
+/* =========================
+   LEFT — SOCIAL + LANGUAGE
+========================= */
 .left {
     display: flex;
     align-items: center;
+    gap: 0.75rem;
+    min-width: 0;
 }
 
 .social {
     display: flex;
-    gap: 14px;
+    gap: 0.875rem;
 }
 
 .social a {
     color: #0a7cff;
-    font-size: 20px;
+    font-size: 1.25rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -92,49 +114,22 @@
 }
 
 /* =========================
-   TABLET (≤ 1024px)
+   LANGUAGE SWITCH
 ========================= */
-@media (max-width: 1024px) {
-    .taskbar {
-        padding: 0 20px;
-    }
-
-    .logo {
-        height: 60px;
-    }
-
-    .title {
-        font-size: 18px;
-    }
-
-    .subtitle {
-        font-size: 14px;
-    }
-
-    .nav a {
-        font-size: 14px;
-        padding: 4px 8px;
-    }
-
-    .social a {
-        font-size: 18px;
-    }
-}
-
-/* LANGUAGE SWITCH */
 .lang-switch {
     display: flex;
-    gap: 6px;
-    margin-left: 14px;
+    gap: 0.375rem;
+    margin-left: 0.75rem;
+    flex-shrink: 0;
 }
 
 .lang-switch button {
     border: 1px solid #ccc;
     background: white;
-    padding: 4px 8px;
-    font-size: 13px;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.8125rem;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 0.25rem;
     color: #333;
 }
 
@@ -149,49 +144,52 @@
 }
 
 
-/* =========================
-   MOBILE (≤ 768px)
-========================= */
-@media (max-width: 768px) {
+
+@media (max-width: 87rem) {
+
     .taskbar {
         height: auto;
         flex-wrap: wrap;
-        padding: 10px 15px;
-        row-gap: 12px;
+        padding: 0.625rem 0.5rem;
+        row-gap: 0.75rem;
     }
 
-    /* FORCE ORDER */
+    /* Top row */
     .left {
         order: 1;
-        flex: 1;
-        justify-content: flex-end;
+        flex: 0 0 auto;
+        justify-content: flex-start;
     }
-
 
     .logoText {
         order: 2;
         flex: 1;
-        justify-content: flex-end; /* RIGHT */
+        justify-content: flex-end;
     }
 
+    /* Nav below */
     .nav {
         order: 3;
         width: 100%;
         justify-content: center;
-        gap: 14px;
-        padding-top: 8px;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        padding-top: 0.5rem;
     }
 
-    /* SIZE ADJUSTMENTS */
     .logo {
-        height: 55px;
+        height: 3.5rem;
     }
 
     .title {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .subtitle {
-        font-size: 13px;
+        font-size: 0.8125rem;
+    }
+
+    .nav a {
+        font-size: 0.875rem;
     }
 }
