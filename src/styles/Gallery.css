@@ -1,0 +1,120 @@
+.gallery-page {
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+/* Filter buttons */
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.filter-btn {
+  background-color: #2483c5;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.filter-btn:hover {
+  background-color: #1f6fa1;
+}
+
+.filter-btn.active {
+  background-color: #1b5d88;
+}
+
+.filter-btn.clear {
+  background-color: #777;
+}
+
+/* Section titles */
+.section {
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #2483c5;
+  margin-bottom: 1rem;
+}
+
+/* Item */
+.item {
+  margin-bottom: 2rem;
+}
+
+.item-title {
+  font-size: 1.5rem;
+  color: #2483c5;
+  margin-bottom: 0.5rem;
+}
+
+.item-description {
+  color: #262161;
+  margin-bottom: 1rem;
+}
+
+/* Carousel */
+.carousel-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 0.5rem;
+}
+
+.item-images {
+  display: flex;
+  gap: 0.5rem;
+  overflow: hidden;
+  flex: 1;
+}
+
+.item-image {
+  flex: 1 0 calc((100% / 5) - 0.5rem);
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.item-image:hover {
+  transform: scale(1.05);
+}
+
+/* Carousel arrows */
+.carousel-arrow {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 0 0.5rem;
+  cursor: pointer;
+  border-radius: 4px;
+  z-index: 10;
+}
+
+.carousel-arrow.left {
+  margin-right: 0.5rem;
+}
+
+.carousel-arrow.right {
+  margin-left: 0.5rem;
+}
+
+/* RTL/LTR support */
+.rtl {
+  direction: rtl;
+}
+
+.ltr {
+  direction: ltr;
+}

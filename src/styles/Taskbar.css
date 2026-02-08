@@ -148,6 +148,7 @@
 @media (max-width: 87rem) {
 
     .taskbar {
+        position: static;
         height: auto;
         flex-wrap: wrap;
         padding: 0.625rem 0.5rem;

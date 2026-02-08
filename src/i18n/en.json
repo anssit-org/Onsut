@@ -181,75 +181,204 @@
   "services": {
     "title": "Our Services",
     "list": [
+    {
+      "id": "1",
+      "title": "Personal Support for Deaf",
+      "description": "We provide personal support and accompaniment for deaf individuals and people with disabilities in daily situations. This includes accompanying them to public institutions, banks, and government facilities to ensure full access to services and rights.",
+      "img": "/images/service1.jpg"
+    },
+    {
+      "id": "2",
+      "title": "Project Development",
+      "description": "We support and encourage people with disabilities to develop their projects and creative ideas. Training and guidance help them leverage their skills to create real work opportunities, fostering financial independence and self-confidence.",
+      "img": "/images/service2.jpg"
+    },
+    {
+      "id": "3",
+      "title": "Employment Integration",
+      "description": "We help people with disabilities find suitable jobs and guide them throughout the employment process. This includes skills assessment, coordination with employers, and support to ensure successful integration into the workplace.",
+      "img": "/images/service3.jpg"
+    },
+    {
+      "id": "4",
+      "title": "Hearing & Speech Therapy",
+      "description": "We provide diagnostic and therapeutic services for the deaf and hard-of-hearing to improve communication and daily life. Services include regular hearing tests, monitoring speech skills development, and personalized therapy programs.",
+      "img": "/images/service4.jpg"
+    },
+    {
+      "id": "5",
+      "title": "Hearing Devices Support",
+      "description": "We offer guidance and support to acquire the right hearing devices for each individual. This includes assessing needs, choosing the appropriate device, and training to use it effectively, while clarifying rights and benefits.",
+      "img": "/images/service5.jpg"
+    },
+    {
+      "id": "6",
+      "title": "The Other is Me",
+      "description": "We aim to introduce the hearing community to the world of deaf individuals through awareness programs and educational activities. This project promotes mutual understanding and encourages integration into daily life.",
+      "img": "/images/service6.jpg"
+    },
+    {
+      "id": "7",
+      "title": "Future Generation",
+      "description": "We train high school students to become agents of change in their communities. Training includes teaching them how to support deaf individuals, raise awareness, and create an inclusive environment that respects everyone’s rights.",
+      "img": "/images/service7.jpg"
+    },
+    {
+      "id": "8",
+      "title": "Learning to Drive",
+      "description": "We support people with disabilities in learning to drive and obtaining a driving license. This includes practical training, guidance on suitable driving schools, and ensuring a safe learning environment.",
+      "img": "/images/service8.jpg"
+    },
+    {
+      "id": "9",
+      "title": "Starting a Family",
+      "description": "We provide advisory services and guidance for individuals and families when marrying and starting a family. This includes event coordination, psychological and social support, and enhancing communication between spouses.",
+      "img": "/images/service9.jpg"
+    },
+    {
+      "id": "10",
+      "title": "Social Security Support",
+      "description": "We assist with submitting documents and contacting social security to ensure beneficiaries receive their entitlements. This includes file monitoring, legal consultations, and ensuring full application of rights.",
+      "img": "/images/service10.jpg"
+    },
+    {
+      "id": "11",
+      "title": "Communication Packages",
+      "description": "We help people with disabilities obtain communication packages and financial support. This includes submitting requests, following up, teaching how to use the benefits, and ensuring effective communication needs are met.",
+      "img": "/images/service11.jpg"
+    },
+    {
+      "id": "12",
+      "title": "Roman Kitchen",
+      "description": "We provide professional culinary training alongside social activities and workshops. The project aims to develop practical skills, build self-confidence, and enhance social interaction among beneficiaries.",
+      "img": "/images/service12.jpg"
+    },
+    {
+      "id": "13",
+      "title": "Technology Room",
+      "description": "We provide professional training in technology, including camera installation courses, mobile repair, and using modern devices. The focus is on enhancing beneficiaries’ skills and enabling technical independence.",
+      "img": "/images/service13.jpg"
+    },
+    {
+      "id": "14",
+      "title": "Academic Support",
+      "description": "We support students academically through guidance, finding suitable institutions, registration assistance, and providing language and enrichment courses to ensure success and full integration into university life.",
+      "img": "/images/service14.jpg"
+    },
+    {
+      "id": "15",
+      "title": "Sign Language Course",
+      "description": "The organization provides courses to learn sign language, aiming to empower individuals to communicate with the deaf and raise awareness of sign language.",
+      "img": "/images/sign-language-course.jpg"
+    }
+  ]
+  },
+  "courseRegisterForm": {
+    "title": "Sign Language Course Registration",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Address",
+    "birthDate": "Birth Date",
+    "agree": "I agree to the registration terms and to be contacted",
+    "submit": "Register for the Course Now",
+    "agreeAlert": "You must agree to the terms first"
+  },
+  "gallery": {
+    "sections": [
       {
-        "title": "Direct Support and Personal Assistance for the Deaf",
-        "description": "We provide personal support and accompaniment for deaf individuals and people with disabilities in daily situations. This includes accompanying them to public institutions, banks, and government facilities to ensure full access to services and rights.",
-        "img": "/images/service1.jpg"
+        "title": "Courses & Workshops",
+        "items": [
+          {
+            "title": "Course 1",
+            "description": "Brief description of the first course...",
+            "images": [
+              "/images/courses/course1-1.jpg",
+              "/images/courses/course1-2.jpg",
+              "/images/courses/course1-3.jpg",
+              "/images/courses/course1-4.jpg",
+              "/images/courses/course1-5.jpg",
+              "/images/courses/course1-6.jpg"
+            ]
+          },
+          {
+            "title": "Course 2",
+            "description": "Brief description of the second course...",
+            "images": [
+              "/images/courses/course2-1.jpg",
+              "/images/courses/course2-2.jpg",
+              "/images/courses/course2-3.jpg"
+            ]
+          }
+        ]
       },
       {
-        "title": "Developing Initiatives and Businesses",
-        "description": "We support and encourage people with disabilities to develop their projects and creative ideas. Training and guidance help them leverage their skills to create real work opportunities, fostering financial independence and self-confidence.",
-        "img": "/images/service2.jpg"
+        "title": "Trips",
+        "items": [
+          {
+            "title": "Visit to the Bee Sanctuary and Circassian Heritage Center",
+            "description": "The association went on a trip to the bee sanctuary \"דבורת התבור,\" where participants learned about the life of bees, what they eat, how honey is produced, and the many health benefits of honey.\nAfterwards, they visited the Circassian Heritage Center in Kfar Kama, where they learned about Circassian history and language, and watched a short film about their heritage.\nThey also took a short tour of the town to see historical buildings, and finally returned to the center to visit the museum and discover more about the local heritage.",
+            "images": [
+              "/trips/bee_sanctuary/image1.jpeg",
+              "/trips/bee_sanctuary/image2.jpeg",
+              "/trips/bee_sanctuary/image3.jpeg",
+              "/trips/bee_sanctuary/image4.jpeg",
+              "/trips/bee_sanctuary/image5.jpeg",
+              "/trips/bee_sanctuary/image6.jpeg",
+              "/trips/bee_sanctuary/image7.jpeg",
+              "/trips/bee_sanctuary/image8.jpeg",
+              "/trips/bee_sanctuary/image9.jpeg",
+              "/trips/bee_sanctuary/image10.jpeg",
+              "/trips/bee_sanctuary/image11.jpeg",
+              "/trips/bee_sanctuary/image12.jpeg",
+              "/trips/bee_sanctuary/image13.jpeg"
+            ]
+          }
+        ]
       },
       {
-        "title": "Employment and Workplace Integration",
-        "description": "We help people with disabilities find suitable jobs and guide them throughout the employment process. This includes skills assessment, coordination with employers, and support to ensure successful integration into the workplace.",
-        "img": "/images/service3.jpg"
+        "title": "Gefen Activities",
+        "items": [
+          {
+            "title": "Activity 1",
+            "description": "Description of the first activity...",
+            "images": [
+              "/images/activities1/img1.jpg",
+              "/images/activities1/img2.jpg",
+              "/images/activities1/img3.jpg"
+            ]
+          }
+        ]
       },
       {
-        "title": "Hearing Tests and Speech Therapy",
-        "description": "We provide diagnostic and therapeutic services for the deaf and hard-of-hearing to improve communication and daily life. Services include regular hearing tests, monitoring speech skills development, and personalized therapy programs.",
-        "img": "/images/service4.jpg"
+        "title": "Community Activities",
+        "items": [
+          {
+            "title": "Community 1",
+            "description": "Description of the community activity...",
+            "images": [
+              "/images/community/img1.jpg",
+              "/images/community/img2.jpg",
+              "/images/community/img3.jpg",
+              "/images/community/img4.jpg"
+            ]
+          }
+        ]
       },
       {
-        "title": "Assistance in Obtaining Hearing Devices",
-        "description": "We offer guidance and support to acquire the right hearing devices for each individual. This includes assessing needs, choosing the appropriate device, and training to use it effectively, while clarifying rights and benefits.",
-        "img": "/images/service5.jpg"
-      },
-      {
-        "title": "The Other is Me",
-        "description": "We aim to introduce the hearing community to the world of deaf individuals through awareness programs and educational activities. This project promotes mutual understanding and encourages integration into daily life.",
-        "img": "/images/service6.jpg"
-      },
-      {
-        "title": "Generation of the Future",
-        "description": "We train high school students to become agents of change in their communities. Training includes teaching them how to support deaf individuals, raise awareness, and create an inclusive environment that respects everyone’s rights.",
-        "img": "/images/service7.jpg"
-      },
-      {
-        "title": "Assisting Disabled Individuals in Learning to Drive",
-        "description": "We support people with disabilities in learning to drive and obtaining a driving license. This includes practical training, guidance on suitable driving schools, and ensuring a safe learning environment.",
-        "img": "/images/service8.jpg"
-      },
-      {
-        "title": "Starting a Family in the Arab Deaf Community",
-        "description": "We provide advisory services and guidance for individuals and families when marrying and starting a family. This includes event coordination, psychological and social support, and enhancing communication between spouses.",
-        "img": "/images/service9.jpg"
-      },
-      {
-        "title": "Contacting Social Security and Claiming Rights",
-        "description": "We assist with submitting documents and contacting social security to ensure beneficiaries receive their entitlements. This includes file monitoring, legal consultations, and ensuring full application of rights.",
-        "img": "/images/service10.jpg"
-      },
-      {
-        "title": "Obtaining Communication Packages and Support",
-        "description": "We help people with disabilities obtain communication packages and financial support. This includes submitting requests, following up, teaching how to use the benefits, and ensuring effective communication needs are met.",
-        "img": "/images/service11.jpg"
-      },
-      {
-        "title": "Roman Kitchen",
-        "description": "We provide professional culinary training alongside social activities and workshops. The project aims to develop practical skills, build self-confidence, and enhance social interaction among beneficiaries.",
-        "img": "/images/service12.jpg"
-      },
-      {
-        "title": "Technology Room",
-        "description": "We provide professional training in technology, including camera installation courses, mobile repair, and using modern devices. The focus is on enhancing beneficiaries’ skills and enabling technical independence.",
-        "img": "/images/service13.jpg"
-      },
-      {
-        "title": "Academic Support",
-        "description": "We support students academically through guidance, finding suitable institutions, registration assistance, and providing language and enrichment courses to ensure success and full integration into university life.",
-        "img": "/images/service14.jpg"
+        "title": "Ramadan Iftar",
+        "items": [
+          {
+            "title": "Iftar 1",
+            "description": "Description of the Ramadan Iftar...",
+            "images": [
+              "/images/iftar/img1.jpg",
+              "/images/iftar/img2.jpg",
+              "/images/iftar/img3.jpg"
+            ]
+          }
+        ]
       }
     ]
   }
