@@ -29,7 +29,7 @@ export default function Taskbar({ lang, setLang }: Props) {
         <a href="/services">{t(lang, "taskbar.nav.services")}</a>
         <a href="/clubs">{t(lang, "taskbar.nav.clubs")}</a>
         <a href="/branches">{t(lang, "taskbar.nav.branches")}</a>
-        <a href="/gallery">{t(lang, "taskbar.nav.gallery")}</a>
+        {/*<a href="/gallery">{t(lang, "taskbar.nav.gallery")}</a>*/}
         <a href="/support">{t(lang, "taskbar.nav.support")}</a>
         <a href="/contact">{t(lang, "taskbar.nav.contact")}</a>
       </nav>

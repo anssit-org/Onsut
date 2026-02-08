@@ -64,7 +64,7 @@ export default function HomePage({ lang }: Props) {
         <Link to="/services" className="hm-nav-box">{t(lang, "taskbar.nav.services")}</Link>
         <Link to="/clubs" className="hm-nav-box">{t(lang, "taskbar.nav.clubs")}</Link>
         <Link to="/branches" className="hm-nav-box">{t(lang, "taskbar.nav.branches")}</Link>
-        <Link to="/gallery" className="hm-nav-box">{t(lang, "taskbar.nav.gallery")}</Link>
+        {/*<Link to="/gallery" className="hm-nav-box">{t(lang, "taskbar.nav.gallery")}</Link>*/}
         <Link to="/support" className="hm-nav-box">{t(lang, "taskbar.nav.support")}</Link>
         <Link to="/contact" className="hm-nav-box">{t(lang, "taskbar.nav.contact")}</Link>
 
