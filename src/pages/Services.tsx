@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import "../styles/Services.css";
 import { t } from "../i18n/Translations"; // your translation helper
 import type { Lang } from "../App";
-import CourseRegisterForm from "../components/CourseRegisterForm";
+//import CourseRegisterForm from "../components/CourseRegisterForm";
 type Service = {
   id: string;
   title: string;
@@ -35,9 +35,9 @@ export default function Services({ lang }: Props) {
           <p>{selected.description}</p>
         </div>
       )}
-      {selected?.id == "15" && (
+      {/*selected?.id == "15" && (
         <CourseRegisterForm lang={lang}/>
-      )}
+      )*/}
       <div className="services-buttons">
         {services.map((s, idx) => (
           <button
