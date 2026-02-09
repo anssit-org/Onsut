@@ -61,7 +61,7 @@ export default function Taskbar({ lang, setLang }: Props) {
           <a href="https://www.facebook.com/onsut1">
             <FaFacebookF />
           </a>
-          <a href="https://www.instagram.com/onsut_kafr_qara/#">
+          <a href="https://www.instagram.com/anssit_association">
             <FaInstagram />
           </a>
         </div>
