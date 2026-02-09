@@ -29,15 +29,6 @@ export default function HomePage({ lang }: Props) {
         </div>
       </div>
 
-      {/* Activity image */}
-      <div className="hero">
-        <img
-          src="/activity.jpg"
-          alt="Activities"
-          className="hero-image"
-        />
-      </div>
-
       {/* Stats */}
       <div className="hm-stats">
         <div className="hm-stat-box">
