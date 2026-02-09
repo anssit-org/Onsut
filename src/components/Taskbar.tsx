@@ -14,7 +14,7 @@ export default function Taskbar({ lang, setLang }: Props) {
       {/* RIGHT */}
       <div className="right">
         <div className="logoText">
-          <img src="/logo.png" alt="Logo" className="logo" />
+          <img src={`/logo-${lang}.png`} alt="Logo" className="logo" />
           <div className="text">
             <div className="title">{t(lang, "taskbar.title.name")}</div>
             <div className="subtitle">{t(lang, "taskbar.title.subtitle")}</div>
