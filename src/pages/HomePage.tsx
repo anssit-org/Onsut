@@ -14,7 +14,7 @@ export default function HomePage({ lang }: Props) {
       {/* Hero */}
       <div className="hero">
         <img
-          src="/logo.png"
+          src={`/logo-${lang}.png`}
           alt="Organization hero"
           className="hero-image"
         />
