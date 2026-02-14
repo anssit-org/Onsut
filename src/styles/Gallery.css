@@ -1,14 +1,9 @@
-/* =========================
-   PAGE LAYOUT
-========================= */
 .gallery-page {
   padding: 2rem;
   background-color: #f9f9f9;
 }
 
-/* =========================
-   FILTER BUTTONS
-========================= */
+/* Filter buttons */
 .filter-buttons {
   display: flex;
   justify-content: center;
@@ -25,12 +20,11 @@
   font-size: 1rem;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.2s, transform 0.2s;
+  transition: 0.2s;
 }
 
 .filter-btn:hover {
   background-color: #1f6fa1;
-  transform: translateY(-2px);
 }
 
 .filter-btn.active {
@@ -41,22 +35,18 @@
   background-color: #777;
 }
 
-/* =========================
-   SECTION TITLES
-========================= */
+/* Section titles */
 .section {
   margin-bottom: 3rem;
 }
 
 .section-title {
-  font-size: 2.4rem;
+  font-size: 2rem;
   color: #2483c5;
   margin-bottom: 1rem;
 }
 
-/* =========================
-   ITEMS
-========================= */
+/* Item */
 .item {
   margin-bottom: 2rem;
 }
@@ -73,13 +63,11 @@
   font-size: 1.8rem;
 }
 
-/* =========================
-   CAROUSEL
-========================= */
+/* Carousel */
 .carousel-wrapper {
+  position: relative;
   display: flex;
   align-items: center;
-  position: relative;
   gap: 0.5rem;
 }
 
@@ -92,7 +80,7 @@
 
 .item-image {
   flex: 1 0 calc((100% / 5) - 0.5rem);
-  height: 250px;
+  height: 180px;
   object-fit: cover;
   border-radius: 6px;
   cursor: pointer;
@@ -103,9 +91,7 @@
   transform: scale(1.05);
 }
 
-/* =========================
-   CAROUSEL ARROWS
-========================= */
+/* Carousel arrows */
 .carousel-arrow {
   position: absolute;
   top: 50%;
@@ -118,112 +104,21 @@
   cursor: pointer;
   border-radius: 4px;
   z-index: 10;
-  transition: background-color 0.2s;
-}
-
-.carousel-arrow:hover {
-  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .carousel-arrow.left {
-  left: -10px; /* left of carousel */
+  inset-inline-start: 0;
 }
 
 .carousel-arrow.right {
-  right: -10px; /* right of carousel */
+  inset-inline-end: 0;
 }
 
-/* =========================
-   RTL / LTR SUPPORT
-========================= */
+/* RTL/LTR support */
 .rtl {
   direction: rtl;
 }
 
 .ltr {
   direction: ltr;
-}
-
-/* =========================
-   RESPONSIVE
-========================= */
-
-/* 4 images */
-@media (max-width: 1280px) {
-  .item-image {
-    flex: 1 0 calc((100% / 4) - 0.5rem);
-  }
-}
-
-/* 3 images */
-@media (max-width: 1024px) {
-  .item-image {
-    flex: 1 0 calc((100% / 3) - 0.5rem);
-  }
-}
-
-/* 2 images */
-@media (max-width: 768px) {
-  .item-image {
-    flex: 1 0 calc((100% / 2) - 0.5rem);
-    height: 200px;
-  }
-
-  .item-description {
-    font-size: 1.6rem;
-  }
-
-  .item-title {
-    font-size: 1.3rem;
-  }
-
-  .section-title {
-    font-size: 2rem;
-  }
-
-  .filter-btn {
-    padding: 0.5rem 1rem;
-    font-size: 0.9rem;
-  }
-
-  .carousel-arrow.left {
-    left: 0;
-  }
-
-  .carousel-arrow.right {
-    right: 0;
-  }
-}
-
-/* 1 image (mobile) */
-@media (max-width: 480px) {
-  .item-image {
-    flex: 1 0 100%;
-    height: 180px;
-  }
-
-  .item-description {
-    font-size: 1.4rem;
-  }
-
-  .item-title {
-    font-size: 1.2rem;
-  }
-
-  .section-title {
-    font-size: 1.8rem;
-  }
-
-  .filter-btn {
-    padding: 0.4rem 0.8rem;
-    font-size: 0.85rem;
-  }
-
-  .carousel-arrow.left {
-    left: 0;
-  }
-
-  .carousel-arrow.right {
-    right: 0;
-  }
 }

@@ -35,23 +35,7 @@ export default function Gallery({ lang }: Props) {
   const [modalSrc, setModalSrc] = useState<string | null>(null);
   const [visibleCount, setVisibleCount] = useState<number>(5);
 
-  // Update visibleCount based on screen width
-  const updateVisibleCount = () => {
-    const width = window.innerWidth;
-    if (width < 480) setVisibleCount(1);
-    else if (width < 768) setVisibleCount(2);
-    else if (width < 1024) setVisibleCount(3);
-    else if (width < 1280) setVisibleCount(4);
-    else setVisibleCount(5);
-  };
-
-  useEffect(() => {
-    updateVisibleCount();
-    window.addEventListener("resize", updateVisibleCount);
-    return () => window.removeEventListener("resize", updateVisibleCount);
-  }, []);
-
-  // Load translated gallery
+  // Load translations dynamically
   useEffect(() => {
     if (!lang) return;
     import(`../i18n/${lang}.json`)
@@ -65,6 +49,23 @@ export default function Gallery({ lang }: Props) {
       })
       .catch((err) => console.error(err));
   }, [lang]);
+
+  // Update visible count based on screen size
+  useEffect(() => {
+    const updateVisibleCount = () => {
+      const w = window.innerWidth;
+      if (w <= 480) setVisibleCount(1);
+      else if (w <= 768) setVisibleCount(2);
+      else if (w <= 1024) setVisibleCount(3);
+      else if (w <= 1280) setVisibleCount(4);
+      else setVisibleCount(5);
+    };
+
+    updateVisibleCount();
+    window.addEventListener("resize", updateVisibleCount);
+
+    return () => window.removeEventListener("resize", updateVisibleCount);
+  }, []);
 
   const showNext = (itemKey: string, imagesLength: number) => {
     setCarouselIndices((prev) => ({
@@ -119,7 +120,7 @@ export default function Gallery({ lang }: Props) {
                 <div className="carousel-wrapper">
                   {startIdx > 0 && (
                     <button className="carousel-arrow left" onClick={() => showPrev(key)}>
-                      {'>'}
+                      ‹
                     </button>
                   )}
 
@@ -140,7 +141,7 @@ export default function Gallery({ lang }: Props) {
                       className="carousel-arrow right"
                       onClick={() => showNext(key, item.images.length)}
                     >
-                      {'<'}
+                      ›
                     </button>
                   )}
                 </div>
