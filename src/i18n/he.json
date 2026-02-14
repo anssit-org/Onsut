@@ -289,26 +289,52 @@
         "title": "קורסים וסדנאות",
         "items": [
           {
-            "title": "קורס 1",
-            "description": "סיכום קצר של הקורס הראשון...",
+            "title": "סדנה התנדבותית עם בית הספר בסמה – מרכז כיסרא-סמיע",
+            "description": "מרכז עמותת אנסאת בכיסרא-סמיע אירח באהבה את בית הספר לחינוך מיוחד בסמה, במסגרת שבוע המעשים הטובים. תלמידי בית הספר העבירו סדנה התנדבותית ליצירת תכשיטים ואקססוריז, במטרה לחזק את ערכי הנתינה והקשר עם חברי העמותה החירשים וכבדי השמיעה. האירוע התקיים באווירה חמה של שיתוף פעולה והעצמה קהילתית.",
             "images": [
-              "/images/courses/course1-1.jpg",
-              "/images/courses/course1-2.jpg",
-              "/images/courses/course1-3.jpg",
-              "/images/courses/course1-4.jpg",
-              "/images/courses/course1-5.jpg",
-              "/images/courses/course1-6.jpg"
+              "/courses/Volunteer_workshop/image1.jpg",
+              "/courses/Volunteer_workshop/image2.jpg",
+              "/courses/Volunteer_workshop/image3.jpg",
+              "/courses/Volunteer_workshop/image4.jpg",
+              "/courses/Volunteer_workshop/image5.jpg",
+              "/courses/Volunteer_workshop/image6.jpg"
             ]
           },
           {
-            "title": "קורס 2",
-            "description": "סיכום קצר של הקורס השני...",
+            "title": "טיפול באמצעות בישול",
+            "description": "קורס “טיפול באמצעות בישול” הוא אחד הקורסים המבוקשים ביותר במרכז עמותת אנסאת בכיסרא-סמיע והסביבה. הקורס כולל מספר מפגשים, בהם המשתתפים חווים את עולם הבישול מזווית ייחודית ומכירים מאכלים ותרבויות מגוונות באווירה חווייתית ומהנה.",
             "images": [
-              "/images/courses/course2-1.jpg",
-              "/images/courses/course2-2.jpg",
-              "/images/courses/course2-3.jpg"
+              "/courses/cooking_workshop/image1.jpg",
+              "/courses/cooking_workshop/image2.jpg",
+              "/courses/cooking_workshop/image3.jpg",
+              "/courses/cooking_workshop/image4.jpg",
+              "/courses/cooking_workshop/image5.jpg",
+              "/courses/cooking_workshop/image6.jpg"
+            ]
+          },
+          {
+            "title": "סיום המחזור השני – קורס מצלמות ומיגון אבטחה",
+            "description": "עמותת אנסאת ציינה את סיום המחזור השני של קורס “מצלמות ומיגון אבטחה” שהתקיים במרכז ריאן להכשרה מקצועית עבור קהילת החירשים וכבדי השמיעה. את הקורס הוביל המרצה איתמר שלב בליווי תרגום של עביר אגבריה. הקורס נבחר בשל התאמתו ובשל היותו מקצוע מודרני ומבוקש, הפותח בפני הבוגרים אפשרויות להשתלבות בשוק העבודה. ברכות חמות לבוגרים ובהצלחה בהמשך דרכם.",
+            "images": [
+              "/courses/cameras_course/image1.jpg",
+              "/courses/cameras_course/image2.jpg",
+              "/courses/cameras_course/image3.jpg",
+              "/courses/cameras_course/image4.jpg"            
+            ]
+          },
+          {
+            "title": "סדנת סידור פרחים מלאכותיים",
+            "description": "עמותת אנסאת קיימה סדנה לסידור פרחים מלאכותיים, במסגרתה למדו המשתתפים ליצור עיצובים מגוונים ולשלב פרחים עם חומרים שונים ליצירת קומפוזיציות ייחודיות. הסדנה התקיימה באווירה יצירתית, חווייתית ומהנה.",
+            "images": [
+              "/courses/art_workshop/image1.jpg",
+              "/courses/art_workshop/image2.jpg",
+              "/courses/art_workshop/image3.jpg",
+              "/courses/art_workshop/image4.jpg",
+              "/courses/art_workshop/image5.jpg",
+              "/courses/art_workshop/image6.jpg"         
             ]
           }
+          
         ]
       },
       {
@@ -333,6 +359,42 @@
               "/trips/bee_sanctuary/image12.jpeg",
               "/trips/bee_sanctuary/image13.jpeg"
             ]
+          },
+          {
+            "title": "טיול נופש לחברי מועדון אנסאת",
+            "description": "עמותת אנסאת ארגנה טיול נופש לחברי המועדון בכפרי כיסרא-סמיע וג'ולס, שכלל ביקור באגם חולתה, שייט בטבריה והגעה לנבי שועיב, וסיום בארוחת צהריים באזור. המשתתפים נהנו מאוד מהטיול והביעו את שמחתם.",
+            "images": [
+              "/trips/tiberias_lake/image1.jpg",
+              "/trips/tiberias_lake/image2.jpg",
+              "/trips/tiberias_lake/image3.jpg",
+              "/trips/tiberias_lake/image4.jpg",
+              "/trips/tiberias_lake/image5.jpg",
+              "/trips/tiberias_lake/image6.jpg",
+              "/trips/tiberias_lake/image7.jpg",
+              "/trips/tiberias_lake/image8.jpg",
+              "/trips/tiberias_lake/image9.jpg",
+              "/trips/tiberias_lake/image10.jpg",
+              "/trips/tiberias_lake/image11.jpg",
+              "/trips/tiberias_lake/image12.jpg",
+              "/trips/tiberias_lake/image13.jpg",
+              "/trips/tiberias_lake/image14.jpg",
+              "/trips/tiberias_lake/image15.jpg"
+            ]
+          },
+          {
+            "title": "טיול תיאטרלי לעכו",
+            "description": "מר איהאב חסקיה הזמין את עמותת אנסאת לתיאטרון שלו בעכו במטרה לחשוף את קהילת החירשים וכבדי השמיעה לעולם המשחק באמצעות הצגות המשקפות את סיפורי החברים. לאחר מכן, המשתתפים ביקרו באתרים התיירותיים המרכזיים בעיר, והטיול הסתיים באווירה מהנה וייחודית שהשאירה רושם חיובי על כולם.",
+            "images": [
+              "/trips/akko_trip/image1.jpg",
+              "/trips/akko_trip/image2.jpg",
+              "/trips/akko_trip/image3.jpg",
+              "/trips/akko_trip/image4.jpg",
+              "/trips/akko_trip/image5.jpg",
+              "/trips/akko_trip/image6.jpg",
+              "/trips/akko_trip/image7.jpg",
+              "/trips/akko_trip/image8.jpg",
+              "/trips/akko_trip/image9.jpg"
+            ]
           }
         ]
       },
@@ -340,12 +402,31 @@
         "title": "פעילויות גפן",
         "items": [
           {
-            "title": "פעילות 1",
-            "description": "תיאור הפעילות הראשונה...",
+            "title": "סדנת מנדלה – שבוע המעשים הטובים בכפר קרע",
+            "description": "במסגרת שבוע המעשים הטובים ובשיתוף המועצה המקומית כפר קרע, קיימה עמותת אנסאת סדנת מנדלה בבית הספר אבן סינא לחטיבת הביניים לתלמידי כיתה ח'. את הסדנה העבירה המדריכה גב' רולא אבו ריאד, ובליווי תרגום של הגב' עביר אגבאריה. הפעילות תרמה לחיזוק היצירתיות, התקשורת וערכי ההתנדבות והנתינה בקרב התלמידים. תודתנו והערכתנו נתונות לשתיהן על תרומתן המשמעותית.",
             "images": [
-              "/images/activities1/img1.jpg",
-              "/images/activities1/img2.jpg",
-              "/images/activities1/img3.jpg"
+              "/activities/mandala_workshop/image1.jpg",
+              "/activities/mandala_workshop/image2.jpg",
+              "/activities/mandala_workshop/image3.jpg",
+              "/activities/mandala_workshop/image4.jpg",
+              "/activities/mandala_workshop/image5.jpg",
+              "/activities/mandala_workshop/image6.jpg",
+              "/activities/mandala_workshop/image7.jpg",
+              "/activities/mandala_workshop/image8.jpg"]
+          },
+          {
+            "title": "יוזמה לרגל חודש הרמדאן – מועדון הילדים של אנסאת",
+            "description": "ילדי מועדון עמותת אנסאת וצוות העמותה יזמו מחווה מיוחדת מול מרכז העמותה בכפר קרע, וברכו את העוברים והשבים לרגל החודש המבורך, יחד עם תלמידות תיכון שהצטרפו ליוזמה. הפעילות מדגישה כי קהילת החירשים וכבדי השמיעה היא חלק בלתי נפרד מהחברה, ונוכחותם ויוזמותיהם מהוות מסר של תקווה לחברה מגובשת יותר.",
+            "images": [
+              "/activities/community_initiative/image1.jpg",
+              "/activities/community_initiative/image2.jpg",
+              "/activities/community_initiative/image3.jpg",
+              "/activities/community_initiative/image4.jpg",
+              "/activities/community_initiative/image5.jpg",
+              "/activities/community_initiative/image6.jpg",
+              "/activities/community_initiative/image7.jpg",
+              "/activities/community_initiative/image8.jpg",
+              "/activities/community_initiative/image9.jpg"
             ]
           }
         ]
@@ -354,13 +435,37 @@
         "title": "פעילויות קהילתיות",
         "items": [
           {
-            "title": "פעילות קהילתית 1",
-            "description": "תיאור הפעילות הקהילתית...",
+            "title": "עמותת אנסאת – הבית השני",
+            "description": "עמותת אנסאת מהווה בית שני לקהילת החירשים וכבדי השמיעה באזורים שונים בארץ. מעבר להיותה מסגרת המספקת שירותים, היא מעניקה תחושת שייכות וחיים משותפים. חברי העמותה נפגשים במרכז בכיסרא-סמיע ובסביבה, ומבלים יחד באווירה חמה של אחווה וקהילתיות.",
             "images": [
-              "/images/community/img1.jpg",
-              "/images/community/img2.jpg",
-              "/images/community/img3.jpg",
-              "/images/community/img4.jpg"
+              "/social_activities/second_home/image1.jpg",
+              "/social_activities/second_home/image2.jpg",
+              "/social_activities/second_home/image3.jpg",
+              "/social_activities/second_home/image4.jpg"
+            ]
+          },
+          {
+            "title": "מפגש קהילתי בכיסרא-סמיע",
+            "description": "עמותת אנסאת מקפידה לחזק את הקשרים בין חבריה, ובמחווה מיוחדת הזמינה חברת העמותה עביר ח'שאן את חברי המרכז בכיסרא-סמיע והסביבה לביתה לארוחת ערב משותפת. המפגש התקיים בנוכחות מרשימה ובאווירה חמה של אחווה, שמחה ותחושת משפחתיות.",
+            "images": [
+              "/social_activities/second_home/image1.jpg",
+              "/social_activities/second_home/image2.jpg",
+              "/social_activities/second_home/image3.jpg",
+              "/social_activities/second_home/image4.jpg"
+            ]
+          },
+          {
+            "title": "יום מודעות לסרטן",
+            "description": "עמותת אנסאת ארגנה יום מודעות לסרטן במועדון החירשים וכבדי השמיעה, שכלל הרצאה על חשיבות הגילוי המוקדם, בדיקות קליניות וייעוץ רפואי למשתתפות. היום התמקד בהגברת המודעות לבריאות ולעידוד בדיקות מוקדמות ככלי חשוב להתמודדות עם המחלה.",
+            "images": [
+              "/social_activities/breast_cancer_awareness/image1.jpg",
+              "/social_activities/breast_cancer_awareness/image2.jpg",
+              "/social_activities/breast_cancer_awareness/image3.jpg",
+              "/social_activities/breast_cancer_awareness/image4.jpg",
+              "/social_activities/breast_cancer_awareness/image5.jpg",
+              "/social_activities/breast_cancer_awareness/image6.jpg",
+              "/social_activities/breast_cancer_awareness/image7.jpg",
+              "/social_activities/breast_cancer_awareness/image8.jpg"
             ]
           }
         ]
@@ -369,12 +474,27 @@
         "title": "איפטר רמדאן",
         "items": [
           {
-            "title": "איפטר 1",
-            "description": "תיאור איפטר רמדאן...",
+            "title": "ארוחת איפטער רמדאן – עמותת אנסאת קלנסווה",
+            "description": "עמותת אנסאת בעיר קלנסווה קיימה ערב איפטער חגיגי לרגל חודש הרמדאן, זו השנה השמינית ברציפות. האירוע הוקדש לחברי העמותה בעיר, ועשרות חברים השתתפו והתכנסו סביב שולחן חגיגי באווירה חמה ומלאת אחווה ושייכות. במהלך הערב בירך מנהל העמותה, מר שאדי עיד, את המשתתפים לרגל החודש המבורך ולקראת חג עיד אל-פיטר, ואיחל לכולם ימים מבורכים מלאי טוב ואושר.",
             "images": [
-              "/images/iftar/img1.jpg",
-              "/images/iftar/img2.jpg",
-              "/images/iftar/img3.jpg"
+              "/iftars/qalansawa/img1.jpg",
+              "/iftars/qalansawa/img2.jpg",
+              "/iftars/qalansawa/img3.jpg",
+              "/iftars/qalansawa/img4.jpg"
+            ]
+          },
+          {
+            "title": "הערב הרמדאני החגיגי – השנה השמינית",
+            "description": "עמותת אנסאת קיימה את ערב הרמדאן החגיגי זו השנה השמינית ברציפות עבור קהילת החירשים וכבדי השמיעה מכל רחבי הארץ. המשתתפים התכנסו לארוחת איפטאר חגיגית בכפר קרע באווירה חמה ושמחה. הערב כלל דברי ברכה, מופע פנטומימה ופעילויות מהנות לילדים, בתמיכת גורמים שונים שתרמו להצלחת האירוע.",
+            "images": [
+              "/iftars/8th_year_evening/image1.jpg",
+              "/iftars/8th_year_evening/image2.jpg",
+              "/iftars/8th_year_evening/image3.jpg",
+              "/iftars/8th_year_evening/image4.jpg",
+              "/iftars/8th_year_evening/image5.jpg",
+              "/iftars/8th_year_evening/image6.jpg",
+              "/iftars/8th_year_evening/image7.jpg",
+              "/iftars/8th_year_evening/image8.jpg"
             ]
           }
         ]

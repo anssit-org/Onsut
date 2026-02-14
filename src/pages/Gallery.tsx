@@ -33,8 +33,25 @@ export default function Gallery({ lang }: Props) {
   const [filteredSectionId, setFilteredSectionId] = useState<number | null>(null);
   const [carouselIndices, setCarouselIndices] = useState<{ [key: string]: number }>({});
   const [modalSrc, setModalSrc] = useState<string | null>(null);
+  const [visibleCount, setVisibleCount] = useState<number>(5);
 
-  // Load translations dynamically
+  // Update visibleCount based on screen width
+  const updateVisibleCount = () => {
+    const width = window.innerWidth;
+    if (width < 480) setVisibleCount(1);
+    else if (width < 768) setVisibleCount(2);
+    else if (width < 1024) setVisibleCount(3);
+    else if (width < 1280) setVisibleCount(4);
+    else setVisibleCount(5);
+  };
+
+  useEffect(() => {
+    updateVisibleCount();
+    window.addEventListener("resize", updateVisibleCount);
+    return () => window.removeEventListener("resize", updateVisibleCount);
+  }, []);
+
+  // Load translated gallery
   useEffect(() => {
     if (!lang) return;
     import(`../i18n/${lang}.json`)
@@ -52,7 +69,7 @@ export default function Gallery({ lang }: Props) {
   const showNext = (itemKey: string, imagesLength: number) => {
     setCarouselIndices((prev) => ({
       ...prev,
-      [itemKey]: Math.min((prev[itemKey] || 0) + 1, imagesLength - 5),
+      [itemKey]: Math.min((prev[itemKey] || 0) + 1, imagesLength - visibleCount),
     }));
   };
 
@@ -66,13 +83,11 @@ export default function Gallery({ lang }: Props) {
   const openModal = (src: string) => setModalSrc(src);
   const closeModal = () => setModalSrc(null);
 
-  // Show only the selected section, initially empty
   const visibleSections =
     filteredSectionId !== null ? sections.filter((sec) => sec.id === filteredSectionId) : [];
 
   return (
     <div className={`gallery-page ${lang === "ar" || lang === "he" ? "rtl" : "ltr"}`}>
-      
       {/* Top filter buttons */}
       <div className="filter-buttons">
         {sections.map((sec) => (
@@ -94,7 +109,7 @@ export default function Gallery({ lang }: Props) {
           {section.items.map((item, idx) => {
             const key = `${section.id}-${idx}`;
             const startIdx = carouselIndices[key] || 0;
-            const visibleImages = item.images.slice(startIdx, startIdx + 5);
+            const visibleImages = item.images.slice(startIdx, startIdx + visibleCount);
 
             return (
               <div key={idx} className="item">
@@ -104,7 +119,7 @@ export default function Gallery({ lang }: Props) {
                 <div className="carousel-wrapper">
                   {startIdx > 0 && (
                     <button className="carousel-arrow left" onClick={() => showPrev(key)}>
-                      ‹
+                      {'>'}
                     </button>
                   )}
 
@@ -115,17 +130,17 @@ export default function Gallery({ lang }: Props) {
                         src={img}
                         alt={`${item.title} ${startIdx + i + 1}`}
                         className="item-image"
-                        onClick={() => openModal(img)} // pass only the clicked image
+                        onClick={() => openModal(img)}
                       />
                     ))}
                   </div>
 
-                  {startIdx + 5 < item.images.length && (
+                  {startIdx + visibleCount < item.images.length && (
                     <button
                       className="carousel-arrow right"
                       onClick={() => showNext(key, item.images.length)}
                     >
-                      ›
+                      {'<'}
                     </button>
                   )}
                 </div>
