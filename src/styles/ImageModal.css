@@ -1,18 +1,28 @@
-/* Modal overlay covers the whole screen */
+/* =========================
+   MODAL OVERLAY
+========================= */
 .modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7); /* semi-transparent dark background */
+  background-color: rgba(0, 0, 0, 0.78);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  animation: fadeIn 0.2s ease;
 }
 
-/* Modal content container */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* =========================
+   MODAL CONTENT
+========================= */
 .modal-content {
   position: relative;
   max-width: 90%;
@@ -22,31 +32,38 @@
   align-items: center;
 }
 
-/* Modal image */
 .modal-content img {
   max-width: 100%;
-  max-height: 100%;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  max-height: 88vh;
+  border-radius: 10px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+  display: block;
 }
 
-/* Close button (×) */
+/* =========================
+   CLOSE BUTTON
+========================= */
 .modal-close {
   position: absolute;
-  top: -10px;
-  right: -40px;
-  width: 30px;
-  height: 30px;
-  background-color: white;
+  top: -14px;
+  right: -14px;
+  width: 34px;
+  height: 34px;
+  background-color: #2483c5;
   border: none;
   border-radius: 50%;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  color: #ffffff;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.3);
   transition: background-color 0.2s, transform 0.2s;
- background-color: #000000;
+  line-height: 1;
+}
 
+.modal-close:hover {
+  background-color: #cf511f;
+  transform: scale(1.08);
 }

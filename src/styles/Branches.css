@@ -15,7 +15,8 @@
   min-height: 100vh;
   padding: 3rem 1rem;
   overflow-x: hidden;
-  font-family: sans-serif;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
 }
 
 .b-page.rtl {
@@ -34,11 +35,15 @@
 .b-hero {
   text-align: center;
   margin-bottom: 3rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .b-title {
-  font-size: 3.4rem;
+  font-size: 3rem;
   color: #2483c5;
+  font-weight: 700;
 }
 
 /* =========================
@@ -52,15 +57,14 @@
 
 .b-central-card {
   width: 100%;
-  max-width: 900px;            /* bigger than other branches */
-  padding: 2.4rem;
-  border-radius: 14px;
+  max-width: 850px;
+  padding: 2.2rem 2.5rem;
+  border-radius: 12px;
   border: 2px solid #2483c5;
-  background-color: #f7f7f7;
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  box-shadow: 0 4px 16px rgba(36, 131, 197, 0.12);
 }
 
-/* Keep hours in one line on desktop */
 .b-central-card .b-text {
   white-space: nowrap;
 }
@@ -70,39 +74,57 @@
 ========================= */
 .b-row {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
-  gap: 2rem;
-  justify-items: center; /* center cards in their columns */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.8rem;
+  justify-items: center;
   margin-bottom: 3rem;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* =========================
-   BRANCH CARDS
+   BRANCH CARDS (logo-style)
 ========================= */
 .b-card {
-  background-color: #f7f7f7;
-  padding: 1.8rem;
+  background-color: #ffffff;
+  padding: 2rem 1.5rem 1.5rem;
   border-radius: 12px;
   width: 100%;
-  max-width: 380px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-  transition: transform 0.2s ease;
+  max-width: 340px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .b-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+/* Branch logo inside card */
+.b-card-logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 1rem;
 }
 
 .b-city {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: #2483c5;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
+  font-weight: 700;
 }
 
 .b-text {
   font-size: 1.05rem;
   color: #262161;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
 }
 
 .b-text strong {
@@ -115,12 +137,44 @@
   display: inline-block;
 }
 
+/* Orange arrow button */
+.b-card-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 2px solid #2483c5;
+  color: #2483c5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  text-decoration: none;
+  margin-top: 1.2rem;
+  transition: background 0.2s, color 0.2s;
+}
+
+.b-card-btn:hover {
+  background: #2483c5;
+  color: #ffffff;
+}
+
+/* =========================
+   SECTION LABEL (e.g. "הסניפים שלנו")
+========================= */
+.b-section-label {
+  font-size: 1.8rem;
+  color: #2483c5;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
 /* =========================
    RESPONSIVE
 ========================= */
 @media (max-width: 1024px) {
   .b-row {
-    grid-template-columns: repeat(2, 1fr); /* 2 cards per row on tablet */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -129,14 +183,17 @@
     max-width: 100%;
   }
 
-  /* Allow wrapping on small screens */
   .b-central-card .b-text {
     white-space: normal;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .b-row {
-    grid-template-columns: 1fr; /* stack on mobile */
+    grid-template-columns: 1fr;
+  }
+
+  .b-title {
+    font-size: 2rem;
   }
 }

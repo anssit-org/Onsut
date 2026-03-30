@@ -1,75 +1,99 @@
 .su-page {
   width: 100%;
-  max-width: 1100px;
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 2rem 1rem 4rem;
+  padding: 3rem 1rem 4rem;
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
 }
 
-/* HERO */
+/* =========================
+   HERO
+========================= */
 .su-hero {
   text-align: center;
   margin-bottom: 3rem;
 }
 
 .su-title {
-  font-size: 3.5rem;
+  font-size: 3rem;
   margin-bottom: 0.5rem;
   color: #2483c5;
+  font-weight: 700;
 }
 
 .su-subtitle {
-  font-size: 2.8rem;
-  color: #2483c5;
+  font-size: 1.6rem;
+  color: #262161;
+  line-height: 1.6;
 }
 
-/* SECTIONS */
+/* =========================
+   SECTIONS
+========================= */
 .su-section {
-  margin-bottom: 3rem;
-  padding: 2rem;
+  margin-bottom: 2.5rem;
+  padding: 2rem 2rem;
   border-radius: 12px;
-  background-color: #f7f7f7;
+  background-color: #f5f5f5;
 }
 
 .su-alt-bg {
-  background-color: #f7f7f7;
+  background-color: #ffffff;
+  border: 1px solid #e8e8e8;
 }
 
 .su-section-title {
-  font-size: 2.2rem;
+  font-size: 1.9rem;
   margin-bottom: 1rem;
   color: #2483c5;
+  font-weight: 600;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e8e8e8;
 }
 
 .su-text {
-  font-size: 1.5rem;
-  line-height: 1.6;
+  font-size: 1.25rem;
+  line-height: 1.75;
   margin-bottom: 1rem;
   color: #262161;
 }
 
-/* LIST */
+/* =========================
+   LIST
+========================= */
 .su-list {
   padding-left: 1.2rem;
   margin-bottom: 1.5rem;
 }
 
 .su-list li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.6rem;
   color: #262161;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  line-height: 1.6;
 }
 
-/* BUTTON */
+.su-list li::marker {
+  color: #2483c5;
+}
+
+/* =========================
+   BUTTON
+========================= */
 .su-button {
-  padding: 0.6rem 1.4rem;
+  padding: 0.75rem 2rem;
   border-radius: 8px;
   border: none;
   cursor: pointer;
   background-color: #2483c5;
   color: #ffffff;
-  font-size: 0.95rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: opacity 0.2s, transform 0.15s;
 }
 
 .su-button:hover {
   opacity: 0.9;
+  transform: translateY(-2px);
 }

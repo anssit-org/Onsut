@@ -290,24 +290,50 @@
         "title": "دورات وورشات",
         "items": [
           {
-            "title": "الدورة 1",
-            "description": "شرح مبسط عن الدورة الأولى...",
+            "title": "ورشة تطوعية مع مدرسة بسمة – مركز كسرى سميع",
+            "description": "استضاف مركز جمعية أنصت في كسرى سميع بكل محبة مدرسة بسمة للتربية الخاصة، حيث شارك طلاب المدرسة في ورشة تطوعية مميزة ضمن أسبوع الأعمال الخيرية. جاءت الورشة على شكل نشاط لصناعة الإكسسوارات، وهدفت إلى تعزيز روح العطاء والتواصل بين الطلاب وأعضاء الجمعية من الصم وثقيلي السمع، في أجواء مليئة بالتعاون والدفء الإنساني.",
             "images": [
-              "/images/courses/course1-1.jpg",
-              "/images/courses/course1-2.jpg",
-              "/images/courses/course1-3.jpg",
-              "/images/courses/course1-4.jpg",
-              "/images/courses/course1-5.jpg",
-              "/images/courses/course1-6.jpg"
+              "/courses/Volunteer_workshop/image1.jpg",
+              "/courses/Volunteer_workshop/image2.jpg",
+              "/courses/Volunteer_workshop/image3.jpg",
+              "/courses/Volunteer_workshop/image4.jpg",
+              "/courses/Volunteer_workshop/image5.jpg",
+              "/courses/Volunteer_workshop/image6.jpg"
             ]
           },
           {
-            "title": "الدورة 2",
-            "description": "شرح مبسط عن الدورة الثانية...",
+            "title": "العلاج عن طريق الطهي",
+            "description": "تُعد دورة “العلاج عن طريق الطهي” من أكثر الدورات إقبالًا في مركز جمعية أنصت في كسرى سميع والمنطقة. تتضمن الدورة عدة لقاءات، يكتشف خلالها المشاركون الطهي من منظور مختلف، ويتعرفون على أطباق متنوعة وثقافاتها في أجواء تفاعلية وممتعة.",
             "images": [
-              "/images/courses/course2-1.jpg",
-              "/images/courses/course2-2.jpg",
-              "/images/courses/course2-3.jpg"
+              "/courses/cooking_workshop/image1.jpg",
+              "/courses/cooking_workshop/image2.jpg",
+              "/courses/cooking_workshop/image3.jpg",
+              "/courses/cooking_workshop/image4.jpg",
+              "/courses/cooking_workshop/image5.jpg",
+              "/courses/cooking_workshop/image6.jpg",
+              "/courses/cooking_workshop/image7.jpg"
+            ]
+          },
+          {
+            "title": "تخريج الفوج الثاني – كورس كاميرات",
+            "description": "احتفلت جمعية أنصت بتخريج الفوج الثاني من دورة “كاميرات ومיגون أمني” التي أُقيمت في الريّان للتأهيل المهني لمجتمع الصم وثقيلي السمع. أشرف على المسار التعليمي الأستاذ איתمر شلب بمرافقة المترجمة عبير إغباريّة. تم اختيار هذه الدورة لملاءمتها وكونها من المهن العصرية المطلوبة، مما يفتح أمام الخريجين آفاقًا للاندماج في سوق العمل. تهانينا الحارة للخريجين مع تمنياتنا لهم بالنجاح والتوفيق.",
+            "images": [
+              "/courses/cameras_course/image1.jpg",
+              "/courses/cameras_course/image2.jpg",
+              "/courses/cameras_course/image3.jpg",
+              "/courses/cameras_course/image4.jpg"            
+            ]
+          },
+          {
+            "title": "ورشة تنسيق الورد الاصطناعي",
+            "description": "نظّمت جمعية أنصت ورشة لتنسيق الورد الاصطناعي، حيث تعلّم المشاركون كيفية تشكيل تصاميم متنوعة ودمج الورد مع مواد مختلفة لإبداع تنسيقات جميلة ومميزة. جاءت الورشة في أجواء تفاعلية مليئة بالإبداع واللمسة الفنية.",
+            "images": [
+              "/courses/art_workshop/image1.jpg",
+              "/courses/art_workshop/image2.jpg",
+              "/courses/art_workshop/image3.jpg",
+              "/courses/art_workshop/image4.jpg",
+              "/courses/art_workshop/image5.jpg",
+              "/courses/art_workshop/image6.jpg"         
             ]
           }
         ]
@@ -333,6 +359,42 @@
               "/trips/bee_sanctuary/image12.jpeg",
               "/trips/bee_sanctuary/image13.jpeg"
             ]
+          },
+          {
+            "title": "رحلة ترفيهية لأعضاء نادي أنصت",
+            "description": "نظّمت جمعية أنصت رحلة ترفيهية لأعضاء ناديها في قريتي كسرى سميع وجولس، تضمنت زيارة بحيرة الحولة وركوب القارب في طبريا، والنبي شعيب، وختامًا بوجبة غذاء في المنطقة. استمتع المشاركون بالرحلة وأعربوا عن سعادتهم.",
+            "images": [
+              "/trips/tiberias_lake/image1.jpg",
+              "/trips/tiberias_lake/image2.jpg",
+              "/trips/tiberias_lake/image3.jpg",
+              "/trips/tiberias_lake/image4.jpg",
+              "/trips/tiberias_lake/image5.jpg",
+              "/trips/tiberias_lake/image6.jpg",
+              "/trips/tiberias_lake/image7.jpg",
+              "/trips/tiberias_lake/image8.jpg",
+              "/trips/tiberias_lake/image9.jpg",
+              "/trips/tiberias_lake/image10.jpg",
+              "/trips/tiberias_lake/image11.jpg",
+              "/trips/tiberias_lake/image12.jpg",
+              "/trips/tiberias_lake/image13.jpg",
+              "/trips/tiberias_lake/image14.jpg",
+              "/trips/tiberias_lake/image15.jpg"
+            ]
+          },
+          {
+            "title": "رحلة مسرحية إلى عكا",
+            "description": "قام السيّد إيهاب خاسكية بدعوة جمعية أنصت لمسرحه في عكا بهدف تعريف مجتمع الصم وثقيلي السمع بعالم التمثيل من خلال عروض تمثيلية تعبّر عن قصص المنتسبين. بعد ذلك، زار المشاركون أبرز أماكن المدينة السياحية، واختتمت الرحلة بأجواء ممتعة ومميزة تركت أثرًا إيجابيًا لدى الجميع.",
+            "images": [
+              "/trips/akko_trip/image1.jpg",
+              "/trips/akko_trip/image2.jpg",
+              "/trips/akko_trip/image3.jpg",
+              "/trips/akko_trip/image4.jpg",
+              "/trips/akko_trip/image5.jpg",
+              "/trips/akko_trip/image6.jpg",
+              "/trips/akko_trip/image7.jpg",
+              "/trips/akko_trip/image8.jpg",
+              "/trips/akko_trip/image9.jpg"
+            ]
           }
         ]
       },
@@ -340,27 +402,73 @@
         "title": "نشاطات גפן",
         "items": [
           {
-            "title": "النشاط 1",
-            "description": "وصف النشاط الأول...",
+            "title": "ورشة ماندالا – أسبوع الأعمال الخيرية في كفر قرع",
+            "description": "ضمن فعاليات أسبوع الأعمال الخيرية، وبالتعاون مع المجلس المحلي كفر قرع، نظّمت جمعية أنصت ورشة ماندالا في مدرسة ابن سينا الإعدادية لطلاب الصف الثامن. قدّمت الورشة المرشدة السيدة رلى أبو رعد، ورافقتها في الترجمة الأستاذة عبير إغبارية، حيث ساهم النشاط في تعزيز الإبداع والتواصل ونشر قيم التطوع والعطاء بين الطلاب. نتقدّم لهما بجزيل الشكر والتقدير على عطائهما ومساهمتهما القيّمة.",
             "images": [
-              "/images/activities1/img1.jpg",
-              "/images/activities1/img2.jpg",
-              "/images/activities1/img3.jpg"
+              "/activities/mandala_workshop/image1.jpg",
+              "/activities/mandala_workshop/image2.jpg",
+              "/activities/mandala_workshop/image3.jpg",
+              "/activities/mandala_workshop/image4.jpg",
+              "/activities/mandala_workshop/image5.jpg",
+              "/activities/mandala_workshop/image6.jpg",
+              "/activities/mandala_workshop/image7.jpg",
+              "/activities/mandala_workshop/image8.jpg"]
+          },
+          {
+            "title": "مبادرة رمضانية – نادي أطفال جمعية أنصت",
+            "description": "قام أطفال نادي جمعية أنصت وأعضاء طاقم الجمعية بمبادرة مميزة أمام مقر الجمعية في كفر قرع، حيث هنّأوا المارّة بقدوم الشهر الفضيل، بمشاركة طالبات من المرحلة الثانوية. تأتي هذه المبادرة تأكيدًا على أن مجتمع الصم وثقيلي السمع جزء لا يتجزأ من المجتمع، وحضورهم ومبادراتهم رسالة أمل لمجتمع أكثر تماسكًا وتكاتفًا.",
+            "images": [
+              "/activities/community_initiative/image1.jpg",
+              "/activities/community_initiative/image2.jpg",
+              "/activities/community_initiative/image3.jpg",
+              "/activities/community_initiative/image4.jpg",
+              "/activities/community_initiative/image5.jpg",
+              "/activities/community_initiative/image6.jpg",
+              "/activities/community_initiative/image7.jpg",
+              "/activities/community_initiative/image8.jpg",
+              "/activities/community_initiative/image9.jpg"
             ]
           }
         ]
       },
       {
-        "title": "نشاطات مجتمعية",
+        "title": "نشاطات اجتماعية",
         "items": [
           {
-            "title": "نشاط مجتمعي 1",
-            "description": "وصف النشاط المجتمعي...",
+            "title": "جمعية أنصت – البيت الثاني",
+            "description": "تُعدّ جمعية أنصت البيت الثاني لمجتمع الصم وثقيلي السمع في مختلف مناطق البلاد، فهي ليست مجرد جهة تقدم خدمات، بل مساحة انتماء وحياة مشتركة. يقضي الأعضاء أوقاتهم في أجواء أخوية داخل مركز الجمعية في كسرى سميع والمناطق المجاورة، حيث يجتمعون ويتشاركون النشاطات واللحظات الجميلة.",
             "images": [
-              "/images/community/img1.jpg",
-              "/images/community/img2.jpg",
-              "/images/community/img3.jpg",
-              "/images/community/img4.jpg"
+              "/social_activities/second_home/image1.jpg",
+              "/social_activities/second_home/image2.jpg",
+              "/social_activities/second_home/image3.jpg",
+              "/social_activities/second_home/image4.jpg"
+            ]
+          },
+          {
+            "title": "لقاء أخوي في كسرى سميع",
+            "description": "تحرص جمعية أنصت دائمًا على تعزيز روح الألفة بين أعضائها، وفي لفتة مميزة دعت المنتسبة عبير خشّان أعضاء المركز في كسرى سميع والمنطقة إلى منزلها لتناول وجبة عشاء جماعية. شهد اللقاء حضورًا واسعًا وأجواءً مليئة بالمحبة والمتعة وروح العائلة الواحدة.",
+            "images": [
+              "/social_activities/community_gathering/image1.jpg",
+              "/social_activities/community_gathering/image2.jpg",
+              "/social_activities/community_gathering/image3.jpg",
+              "/social_activities/community_gathering/image4.jpg",
+              "/social_activities/community_gathering/image5.jpg",
+              "/social_activities/community_gathering/image6.jpg",
+              "/social_activities/community_gathering/image7.jpg"
+            ]
+          },
+          {
+            "title": "اليوم التوعوي لمرض السرطان",
+            "description": "نظّمت جمعية أنصت يومًا توعويًا حول مرض السرطان في نادي الصم وثقيلي السمع، شمل محاضرة عن أهمية الكشف المبكر وفحوصات سريرية واستشارات طبية للمشاركات. ركّز اليوم على رفع الوعي الصحي وتشجيع الفحص المبكر كأساس للتعامل مع المرض.",
+            "images": [
+              "/social_activities/breast_cancer_awareness/image1.jpg",
+              "/social_activities/breast_cancer_awareness/image2.jpg",
+              "/social_activities/breast_cancer_awareness/image3.jpg",
+              "/social_activities/breast_cancer_awareness/image4.jpg",
+              "/social_activities/breast_cancer_awareness/image5.jpg",
+              "/social_activities/breast_cancer_awareness/image6.jpg",
+              "/social_activities/breast_cancer_awareness/image7.jpg",
+              "/social_activities/breast_cancer_awareness/image8.jpg"
             ]
           }
         ]
@@ -369,12 +477,27 @@
         "title": "افطار رمضان",
         "items": [
           {
-            "title": "إفطار 1",
-            "description": "وصف إفطار رمضان...",
+            "title": "إفطار رمضان – جمعية أنصت قلنسوة",
+            "description": "أقامت جمعية أنصت في مدينة قلنسوة أمسية إفطار رمضانية مميزة للسنة الثامنة على التوالي، خُصصت لأعضاء الجمعية في المدينة. شارك في الأمسية عشرات الأعضاء الذين اجتمعوا حول مأدبة إفطار في أجواء رمضانية دافئة مليئة بالمحبة والأخوة وروح الانتماء. وخلال اللقاء، قدّم مدير الجمعية السيد شادي عيد تهانيه للأعضاء بمناسبة الشهر الفضيل واقتراب عيد الفطر السعيد، متمنيًا للجميع أيامًا مباركة تحمل الخير والسعادة.",
             "images": [
-              "/images/iftar/img1.jpg",
-              "/images/iftar/img2.jpg",
-              "/images/iftar/img3.jpg"
+              "/iftars/qalansawa/img1.jpg",
+              "/iftars/qalansawa/img2.jpg",
+              "/iftars/qalansawa/img3.jpg",
+              "/iftars/qalansawa/img4.jpg"
+            ]
+          },
+          {
+            "title": "الأمسيّة الرمضانية الخيريّة – السنة الثامنة",
+            "description": "أقامت جمعية أنصت أمسيتها الرمضانية الخيرية للسنة الثامنة على التوالي لمجتمع الصم وثقيلي السمع من مختلف مناطق البلاد، حيث اجتمع المشاركون حول مأدبة إفطار في كفر قرع بأجواء مليئة بالبهجة والمحبة. تخللت الأمسية كلمات تهنئة، عرض تمثيل صامت، وفقرات ترفيهية مميزة للأطفال، وذلك بدعم عدد من الجهات الداعمة. تتقدم الجمعية بجزيل الشكر لكل من ساهم في إنجاح هذه الأمسية المميزة.",
+            "images": [
+              "/iftars/8th_year_evening/image1.jpg",
+              "/iftars/8th_year_evening/image2.jpg",
+              "/iftars/8th_year_evening/image3.jpg",
+              "/iftars/8th_year_evening/image4.jpg",
+              "/iftars/8th_year_evening/image5.jpg",
+              "/iftars/8th_year_evening/image6.jpg",
+              "/iftars/8th_year_evening/image7.jpg",
+              "/iftars/8th_year_evening/image8.jpg"
             ]
           }
         ]

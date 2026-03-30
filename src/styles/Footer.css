@@ -2,13 +2,33 @@
    FOOTER ROOT
 ========================= */
 .site-footer {
-  background: #f7f7f7;
-  color: #777;
-  padding: 20px 25px;
-  font-size: 1.2rem;
+  background: #2483c5;
+  color: rgba(255,255,255,0.85);
+  padding: 1.8rem 2rem;
+  font-size: 1.1rem;
+  border-top: 4px solid #2483c5;
+}
 
-  /* 👇 keep the grey line at the top */
-  border-top: 1px solid rgba(0, 0, 0, 0.08);
+/* =========================
+   FOOTER LINKS (optional top row)
+========================= */
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.2rem;
+}
+
+.footer-links a {
+  color: rgba(255,255,255,0.85);
+  text-decoration: none;
+  font-size: 1.05rem;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
 }
 
 /* =========================
@@ -16,6 +36,6 @@
 ========================= */
 .footer-bottom {
   text-align: center;
-  font-size: 1.2rem;
-  color: #777;
+  font-size: 1.05rem;
+  color: rgba(255,255,255,0.75);
 }
