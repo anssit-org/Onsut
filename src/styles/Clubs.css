@@ -5,52 +5,66 @@
 }
 
 /* =========================
-   HERO (NO BACKGROUND)
+   HERO
 ========================= */
 .sc-hero {
-  padding: 4rem 1rem;
+  padding: 3.5rem 1rem 2rem;
   text-align: center;
+  border-bottom: 3px solid #2483c5;
+  max-width: 900px;
+  margin: 0 auto 3rem;
 }
 
 .sc-title {
-  font-size: 3.4rem;
+  font-size: 3rem;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
   color: #2483c5;
 }
 
 .sc-subtitle {
-  font-size: 1.8rem;
-  color: #2483c5;
+  font-size: 1.4rem;
+  color: #262161;
   max-width: 700px;
   margin: 0 auto;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 /* =========================
    SECTIONS
 ========================= */
 .sc-about {
-  max-width: 900px;
-  margin: 2.5rem auto;
-  padding: 3rem 1.5rem;
+  max-width: 860px;
+  margin: 2rem auto;
+  padding: 2.5rem 1.5rem;
 }
 
 .sc-section {
-  max-width: 900px;
-  margin: 2.5rem auto;
-  padding: 3rem 1.5rem;
-  background-color: #f7f7f7;
+  max-width: 860px;
+  margin: 2rem auto;
+  padding: 2.5rem 1.5rem;
+  background-color: #f5f5f5;
+  border-radius: 12px;
 }
 
+/* =========================
+   SECTION TITLE
+========================= */
+.sc-section-title {
+  font-size: 1.8rem;
+  color: #2483c5;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e8e8e8;
+}
 
 /* =========================
-   SECTION TITLES & TEXT
+   TEXT
 ========================= */
-
 .sc-text {
-  font-size: 1.4rem;
-  line-height: 1.8;
+  font-size: 1.25rem;
+  line-height: 1.85;
   color: #262161;
 }
 
@@ -64,9 +78,14 @@
 }
 
 .sc-list li {
-  margin-bottom: 0.6rem;
-  font-size: 1.3rem;
+  margin-bottom: 0.65rem;
+  font-size: 1.2rem;
   color: #262161;
+  line-height: 1.65;
+}
+
+.sc-list li::marker {
+  color: #2483c5;
 }
 
 /* =========================
@@ -75,6 +94,21 @@
 html[dir="rtl"] .sc-list {
   padding-inline-start: 0;
   padding-inline-end: 1.5rem;
+}
+
+/* =========================
+   READ MORE
+========================= */
+.sc-read-more {
+  color: #2483c5;
+  font-size: 1.1rem;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.sc-read-more:hover {
+  text-decoration: underline;
 }
 
 /* =========================

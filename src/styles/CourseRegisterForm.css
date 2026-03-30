@@ -1,24 +1,31 @@
-
-/* Container */
+/* =========================
+   CONTAINER
+========================= */
 .form-wrapper {
   max-width: 520px;
   margin: 40px auto;
   background: #ffffff;
   padding: 35px 30px;
   border-radius: 14px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.40);
-  font-family: "Segoe UI", Tahoma, sans-serif;
+  box-shadow: 0 6px 28px rgba(0, 0, 0, 0.10);
+  font-family: Arial, sans-serif;
+  border-top: 4px solid #2483c5;
 }
 
-/* Title */
+/* =========================
+   TITLE
+========================= */
 .form-title {
   text-align: center;
-  font-size: 22px;
+  font-size: 1.6rem;
   margin-bottom: 25px;
-  color: #333;
+  color: #2483c5;
+  font-weight: 700;
 }
 
-/* Form */
+/* =========================
+   FORM
+========================= */
 .modern-form {
   display: flex;
   flex-direction: column;
@@ -35,7 +42,9 @@
   flex: 1;
 }
 
-/* Inputs */
+/* =========================
+   INPUTS
+========================= */
 .modern-form input[type="text"],
 .modern-form input[type="email"],
 .modern-form input[type="tel"],
@@ -43,23 +52,25 @@
   width: 100%;
   padding: 12px 14px;
   font-size: 14px;
-  border: 1px solid #d0d4db;
+  border: 1.5px solid #d0d4db;
   border-radius: 8px;
   outline: none;
   transition: border-color 0.2s, box-shadow 0.2s;
+  color: #262161;
 }
 
 .modern-form input::placeholder {
-  color: #888;
+  color: #aaa;
 }
 
-/* Focus */
 .modern-form input:focus {
-  border-color: #1769ff;
-  box-shadow: 0 0 0 3px rgba(23, 105, 255, 0.15);
+  border-color: #2483c5;
+  box-shadow: 0 0 0 3px rgba(36, 131, 197, 0.15);
 }
 
-/* Checkbox */
+/* =========================
+   CHECKBOX
+========================= */
 .checkbox {
   display: flex;
   align-items: center;
@@ -72,33 +83,40 @@
 .checkbox input {
   width: 16px;
   height: 16px;
-  accent-color: #1769ff;
+  accent-color: #2483c5;
 }
 
-/* Button */
-button {
+/* =========================
+   BUTTON
+========================= */
+button[type="submit"],
+.form-submit-btn {
   margin-top: 10px;
   padding: 14px;
-  font-size: 16px;
+  font-size: 1.05rem;
   font-weight: bold;
   color: #fff;
-  background: #1769ff;
+  background: #2483c5;
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  transition: background 0.2s, transform 0.1s, box-shadow 0.1s;
+  transition: background 0.2s, transform 0.1s;
+  width: 100%;
 }
 
-button:hover {
-  background: #0f5be3;
+button[type="submit"]:hover,
+.form-submit-btn:hover {
+  background: #cf511f;
 }
 
-button:active {
+button[type="submit"]:active,
+.form-submit-btn:active {
   transform: translateY(1px);
-  box-shadow: 0 4px 10px rgba(23, 105, 255, 0.4) inset;
 }
 
-/* Responsive */
+/* =========================
+   RESPONSIVE
+========================= */
 @media (max-width: 480px) {
   .row {
     flex-direction: column;
