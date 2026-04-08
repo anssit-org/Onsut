@@ -283,7 +283,9 @@
     "birthDate": "Birth Date",
     "agree": "I agree to the registration terms and to be contacted",
     "submit": "Register for the Course Now",
-    "agreeAlert": "You must agree to the terms first"
+    "agreeAlert": "You must agree to the terms first",
+    "successMessage": "Registration sent successfully!",
+    "errorMessage": "Something went wrong. Please try again."
   },
   "gallery": {
     "sections": [
